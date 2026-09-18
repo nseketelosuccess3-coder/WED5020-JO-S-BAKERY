@@ -1,135 +1,17 @@
-/* ============================= */
-/* JO'S BAKERY - PRETORIA CENTRAL */
-/* COLOUR CHANGING NAV */
-/* ============================= */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background: #FFFBF5;
-  color: #4A3728;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.7;
-}
-
-/* ===== HEADER - HORIZONTAL ===== */
-header {
-  background: #FFFFFF;
-  padding: 15px 40px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-.logo {
-  font-size: 22px;
-  letter-spacing: 5px;
-  border: 2px solid #2C1810;
-  padding: 8px 18px;
-  font-weight: 700;
-  color: #2C1810;
-}
-
-/* ===== NAV - COLOUR CHANGING ===== */
-nav {
-  display: flex;
-  flex-direction: row;
-  gap: 12px;
-}
-
-nav a {
-  color: #6B5A4F;
-  text-decoration: none;
-  font-size: 12px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-weight: 700;
-  padding: 8px 16px;
-  border-radius: 20px;
-  transition: all 0.3s ease;
-  border: 1px solid transparent;
-}
-
-/* HOME - Brown hover */
-nav a:nth-child(1):hover {
-  color: #FFFFFF;
-  background: #2C1810;
-}
-
-/* SERVICES - Gold hover */
-nav a:nth-child(2):hover {
-  color: #FFFFFF;
-  background: #D4A373;
-  border-color: #D4A373;
-}
-
-/* ABOUT - Orange hover */
-nav a:nth-child(3):hover {
-  color: #FFFFFF;
-  background: #8B5E3C;
-  border-color: #8B5E3C;
-}
-
-/* ENQUIRIES - Dark brown hover */
-nav a:nth-child(4):hover {
-  color: #FFFFFF;
-  background: #A67C52;
-  border-color: #A67C52;
-}
-
-/* CONTACT - Black hover */
-nav a:nth-child(5):hover {
-  color: #FFFFFF;
-  background: #000000;
-}
-
-/* Active page */
-nav a.active {
-  color: #FFFFFF !important;
-  background: #D4A373 !important;
-}
-
-/* ===== HERO - TEXT LEFT, IMAGE RIGHT ===== */
-.hero {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 60px 40px;
-  gap: 40px;
-  background: #FFFBF5;
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: left;
-}
-
-.hero-text {
-  flex: 1;
-}
-
-.hero-image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
-
-.hero-image img {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 20px;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
-}
-
-.small-title {
-  font-size: 10px;
-  letter-spacing: 3px;
-  color: #D4A373;
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:#FFFBF5; color:#4A3728; font-family:Arial,sans-serif; }
+header { background:#fff; padding:15px 40px; display:flex; justify-content:space-between; align-items:center; box-shadow:0 2px 10px rgba(0,0,0,0.05); }
+.logo { border:2px solid #2C1810; padding:8px 18px; letter-spacing:4px; font-weight:800; }
+nav { display:flex; gap:12px; }
+nav a { text-decoration:none; color:#6B5A4F; font-size:11px; font-weight:700; text-transform:uppercase; padding:7px 14px; border-radius:20px; }
+nav a.active { background:#D4A373; color:#fff; }
+nav a:hover { background:#D4A373; color:#fff; }
+section { padding:50px 30px; text-align:center; background:#fff; min-height:70vh; }
+.small-title { color:#D4A373; font-size:10px; letter-spacing:3px; font-weight:700; }
+h1 { font-size:38px; color:#2C1810; margin:10px 0; }
+h1 span { color:#8B5E3C; font-style:italic; }
+.cards { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; margin-top:30px; max-width:1100px; margin-left:auto; margin-right:auto; }
+.card { background:#FFFBF5; border:2px solid #F5E6D3; border-radius:16px; padding:22px; width:280px; text-align:left; box-shadow:0 6px 18px rgba(0,0,0,0.06); }
+.btn { background:#2C1810; color:#fff; padding:12px 25px; border-radius:25px; text-decoration:none; display:inline-block; margin-top:25px; font-size:11px; letter-spacing:2px; }
+footer { background:#2C1810; color:#F5E6D3; padding:25px; text-align:center; margin-top:40px; font-size:12px; }
+.hero-text { flex:1; }
