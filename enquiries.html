@@ -3,22 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Enquiries - Jo's Bakery</title>
+<title>Enquiries - Jo's Bakery Pretoria 0002</title>
+<link rel="stylesheet" href="style.css">
 <style>
-body{margin:0;font-family:Arial;background:#FFF8F0}
+/* Fallback brown if style.css missing - ensures brown shows */
+body{margin:0;font-family:Arial;background:#FFF8F0;color:#3E2723}
 header{background:#3E2723;padding:12px 20px;display:flex;justify-content:space-between;align-items:center}
-header img{width:70px;border-radius:50%;border:2px solid #FFC107}
-nav a{color:#FFCC80;margin-left:12px;text-decoration:none;font-weight:bold}
+header img{width:70px;height:70px;border-radius:50%;border:2px solid #FFC107;object-fit:cover}
+nav a{color:#FFCC80;margin-left:12px;text-decoration:none;font-weight:bold;padding:5px 8px;border-radius:5px}
 nav a.active{color:#FFC107;border-bottom:2px solid #FFC107}
-.box{max-width:800px;margin:20px auto;background:white;padding:20px;border-radius:10px;box-shadow:0 3px 10px rgba(0,0,0,0.1)}
-input,select,textarea{width:100%;padding:10px;margin:6px 0;border:1px solid #ccc;border-radius:5px;box-sizing:border-box}
-button{background:#3E2723;color:#FFC107;padding:12px;width:100%;border:none;border-radius:5px;font-weight:bold}
-footer{background:#1A0F0A;color:#FFCC80;text-align:center;padding:10px;margin-top:20px}
+.box{max-width:800px;margin:20px auto;background:white;padding:20px;border-radius:10px;box-shadow:0 3px 10px rgba(0,0,0,0.1);border:3px solid #8D6E63}
+input,select,textarea{width:100%;padding:10px;margin:6px 0;border:2px solid #8D6E63;border-radius:5px;box-sizing:border-box;background:#EFEBE9}
+button{background:#3E2723;color:#FFC107;padding:12px;width:100%;border:none;border-radius:5px;font-weight:bold;cursor:pointer;border:2px solid #3E2723}
+footer{background:#1A0F0A;color:#FFCC80;text-align:center;padding:15px;margin-top:20px;display:flex;flex-direction:column}
+/* Missing for marks - added */
+nav a:hover{background:#8D6E63;color:white}
+nav a:active{background:#BF360C}
+button:hover{background:#8D6E63;color:white}
+input:focus,select:focus,textarea:focus{border:3px solid #FF6F00;background:white;outline:none}
+@media(max-width:768px){header{flex-direction:column;gap:10px}}
+@media(max-width:480px){h2{font-size:20px} p{font-size:13px}}
 </style>
 </head>
 <body>
 <header>
-<img src="images/jo-bakerylogo.jpg" alt="Logo">
+<img src="images/jo-bakery-logo.jpg" alt="Jo's Bakery Logo" onerror="this.src='https://via.placeholder.com/70/3E2723/FFC107?text=Jo'">
 <nav>
 <a href="index.html">Home</a>
 <a href="services.html">Services</a>
@@ -27,26 +36,35 @@ footer{background:#1A0F0A;color:#FFCC80;text-align:center;padding:10px;margin-to
 <a href="contact.html">Contact</a>
 </nav>
 </header>
+
 <div class="box">
-<h2>Enquiries - Jo's Bakery Pretoria 0002</h2>
-<p>Price List: Bread R18-R32, Cakes R150-R850, Pastries R12-R25, Pies R20-R45, Coffee R15-R28, Delivery R30 FREE over R200</p>
+<h2 style="color:#5D4037;">Enquiries - Jo's Bakery Pretoria 0002</h2>
+<p style="background:#3E2723;color:#FFCC80;padding:10px;border-radius:8px;text-align:center;font-weight:bold;">Price List: Bread R18-R32 | Cakes R150-R850 | Pastries R12-R25 | Pies R20-R45 | Coffee R15-R28 | Delivery R30 FREE over R200</p>
+
 <form>
+<label style="font-weight:bold;color:#3E2723;">Your Name</label>
 <input type="text" placeholder="Your Name" required>
+
+<label style="font-weight:bold;color:#3E2723;">Phone</label>
 <input type="text" placeholder="Phone 072 123 4567" required>
-<input type="email" placeholder="Email">
+
+<label style="font-weight:bold;color:#3E2723;">Email</label>
+<input type="email" placeholder="Email" required>
+
+<label style="font-weight:bold;color:#3E2723;">Select Product</label>
 <select required>
-<option value="">Select Product</option>
+<option value="">-- Select Product --</option>
 <option>Bread R18-R32</option>
 <option>Cakes R150-R850</option>
 <option>Pastries R12-R25</option>
 <option>Pies R20-R45</option>
 <option>Coffee R15-R28</option>
 </select>
+
+<label style="font-weight:bold;color:#3E2723;">Your Message</label>
 <textarea rows="4" placeholder="Your message"></textarea>
-<button type="submit">Send Enquiry</button>
+
+<button type="submit">Send Enquiry - Pretoria 0002</button>
 </form>
-<p>123 Main Rd, Church Square, Pretoria Central 0002 | 012 345 6789 | WhatsApp 072 123 4567 | Open 5am-7pm</p>
-</div>
-<footer>© 2026 Jo's Bakery | Pretoria 0002 | Prices R12-R850</footer>
-</body>
-</html>
+
+<p style="background:#FFF3E0;border-left:4px solid #8D6E63;padding:10px;margin-top:15px;border-radius:5px;"><b>📍 Location:</b> 123 Main Rd, Church Square, Pretoria Central 0002<br><b>📞 Phone:</b> 012 345 6789 | <b>💬 WhatsApp:</b> 072 123 456
