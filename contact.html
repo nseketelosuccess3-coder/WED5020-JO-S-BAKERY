@@ -5,77 +5,111 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact - Jo's Bakery Pretoria Central</title>
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* BLUE MENU FIX - ADDED */
+    header{
+      display:flex !important;
+      justify-content:space-between !important;
+      align-items:center !important;
+      padding:15px 30px !important;
+      background:white !important;
+      border-bottom:1px solid #ddd !important;
+    }
+    nav a{
+      color:#1a3c8f !important;
+      font-weight:bold !important;
+      text-decoration:none !important;
+      margin-left:20px !important;
+      padding-bottom:4px !important;
+      transition:0.3s !important;
+    }
+    nav a:hover{
+      color:#0066ff !important;
+      border-bottom:2px solid #0066ff !important;
+    }
+  </style>
 </head>
 <body>
 
-  <header>
-    <div class="logo">JOS</div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="catalog.html">Services</a>
-      <a href="about.html">About</a>
-      <a href="enquiries.html">Enquiries</a>
-      <a href="contact.html" class="active">Contact</a>
-    </nav>
-  </header>
+<header>
+<img src="images/jo-bakerylogo.jpg" alt="Jo's Bakery Logo" width="110">
+<nav>
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="about.html">About</a>
+<a href="enquiries.html">Enquiries</a>
+<a href="contact.html" style="color:#0066ff; border-bottom:2px solid #0066ff;">Contact</a>
+</nav>
+</header>
+<section style="max-width:1100px; margin:0 auto; padding:2rem 1rem;">
+  <p class="small-title" style="color:#0066ff; font-weight:700; letter-spacing:1px;">VISIT US - PRETORIA CENTRAL</p>
+  <h1>Find <span style="color:#0066ff;">Jo's Bakery</span></h1>
+  <p>Pretoria Central, Church Square, 0002. At Jo's Bakery we are open Mon-Sat 5am-6pm for fresh bread, cakes, pastries and coffee. Visit us today at 123 Main Road or order online for delivery from R30, free over R200.</p>
 
-  <section>
-    <p class="small-title">VISIT US - PRETORIA CENTRAL</p>
-    <h1>Find <span>Jo's Bakery</span></h1>
-    <p>Pretoria Central, Church Square, 0002</p>
+  <!-- PICTURES + PRICES FOR ADVERTISING -->
+  <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:15px; margin:20px 0;">
+    <img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?w=400" alt="Bakery Interior" style="width:100%; height:180px; object-fit:cover; border-radius:12px;">
+    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400" alt="Fresh Bread" style="width:100%; height:180px; object-fit:cover; border-radius:12px;">
+    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400" alt="Cakes" style="width:100%; height:180px; object-fit:cover; border-radius:12px;">
+  </div>
 
-    <div class="cards">
-      <div class="card">
-        <h3>📍 Location</h3>
-        <p>
-          <b>Jo's Bakery</b><br>
-          Pretoria Central<br>
-          Church Square Area<br>
-          Pretoria, 0002<br>
-          Mon-Sat: 5am-6pm
-        </p>
-      </div>
-      <div class="card">
-        <h3>📞 Call Us</h3>
-        <p>
-          012 345 6789<br>
-          081 234 5678<br>
-          orders@josbakery.co.za<br>
-          WhatsApp Available
-        </p>
-      </div>
-      <div class="card">
-        <h3>🚚 Delivery</h3>
-        <p>
-          Pretoria Central<br>
-          Sunnyside, Arcadia<br>
-          Hatfield, Brooklyn<br>
-          & More!
-        </p>
-      </div>
+  <div class="cards" style="display:grid; grid-template-columns:repeat(3, 1fr); gap:20px;">
+    <div class="card" style="background:white; padding:20px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.08); border-left:5px solid #0066ff;">
+      <h3>📍 Location</h3>
+      <p>
+        <b>Jo's Bakery</b><br>
+        123 Main Rd, Pretoria Central<br>
+        Church Square Area<br>
+        Pretoria, 0002<br>
+        Mon-Sat: 5am-6pm
+      </p>
+      <p style="margin-top:10px; color:#0066ff; font-weight:700;">Prices: Bread R18-32, Cakes R150-850</p>
     </div>
-
-    <!-- MAP - PRETORIA CENTRAL -->
-    <div class="map-box">
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.5!2d28.1868!3d-25.7479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95619cbec65033%3A0xf66262b07a847b4!2sChurch%20Square%2C%20Pretoria%20Central!5e0!3m2!1sen!2sza!4v1700000000000" 
-        width="100%" 
-        height="450" 
-        style="border:0;" 
-        allowfullscreen="" 
-        loading="lazy">
-      </iframe>
+    <div class="card" style="background:white; padding:20px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.08); border-left:5px solid #0066ff;">
+      <h3>📞 Call Us</h3>
+      <p>
+        012 345 6789<br>
+        081 234 5678<br>
+        orders@josbakery.co.za<br>
+        WhatsApp Available
+      </p>
+      <p style="margin-top:10px; color:#0066ff; font-weight:700;">Pastries R12-25, Coffee R15-28</p>
     </div>
+    <div class="card" style="background:white; padding:20px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.08); border-left:5px solid #0066ff;">
+      <h3>🚚 Delivery</h3>
+      <p>
+        Pretoria Central<br>
+        Sunnyside, Arcadia<br>
+        Hatfield, Brooklyn<br>
+        & More! R30 - Free over R200
+      </p>
+      <p style="margin-top:10px; color:#0066ff; font-weight:700;">Pies R20-45</p>
+    </div>
+  </div>
 
-    <a href="https://maps.google.com/?q=Church+Square+Pretoria+Central" target="_blank" class="btn">
-      OPEN IN GOOGLE MAPS
+  <!-- MAP - PRETORIA CENTRAL -->
+  <div class="map-box" style="margin-top:30px; border-radius:12px; overflow:hidden; border:3px solid #0066ff;">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.5!2d28.1868!3d-25.7479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95619cbec65033%3A0xf66262b07a847b4!2sChurch%20Square%2C%20Pretoria%20Central!5e0!3m2!1sen!2sza!4v1700000000000" 
+      width="100%" 
+      height="450" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy">
+    </iframe>
+  </div>
+
+  <div style="text-align:center; margin-top:20px;">
+    <a href="https://maps.google.com/?q=Church+Square+Pretoria+Central" target="_blank" class="btn" style="display:inline-block; background:#0066ff; color:white; padding:12px 30px; border-radius:6px; text-decoration:none; font-weight:700;">
+      OPEN IN GOOGLE MAPS - 123 Main Rd, 0002
     </a>
+  </div>
 
-  </section>
+</section>
 
-  <footer>
-    <p>© 2026 Jo's Bakery - Pretoria Central, 0002</p>
-  </footer>
+<footer style="background:#222; color:white; text-align:center; padding:1.5rem; margin-top:30px;">
+  <p>© 2026 Jo's Bakery - Pretoria Central, 0002 | 💰 Prices R12-R850 | 📍 123 Main Rd, Church Square</p>
+</footer>
 
 </body>
 </html>
