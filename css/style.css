@@ -189,3 +189,14 @@ footer p {
   header { padding: 15px 20px; }
   section { padding: 40px 20px; }
 }
+/* FORCE LIGHT THEME OVERRIDE */
+body, .hero, section, header, main, div {
+  background-color: #FFFBF5 !important;
+  color: #4A3728 !important;
+}
+footer {
+  background-color: #2C1810 !important;
+}
+h1, h2, h3 {
+  color: #2C1810 !important;
+}
