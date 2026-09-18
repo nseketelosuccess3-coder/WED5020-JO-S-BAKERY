@@ -7,7 +7,7 @@
 Jo's Bakery is a responsive bakery website - fresh bread, cakes, pastries in Pretoria. It showcases 6 services with responsive design for desktop, tablet and mobile.
 
 ## Live Site
-- Netlify (Main): https://jos-bakery.netlify.app
+- Netlify (Main): https://chic-liger-8dc150.netlify.app
 - GitHub Pages: https://nseketelosuccess3-coder.github.io/WED5020-JO-S-BAKERY/
 - GitHub Repo: https://github.com/nseketelosuccess3-coder/WED5020-JO-S-BAKERY
 
@@ -40,7 +40,6 @@ All images scale with max-width:100%, typography shrinks correctly.
 - Netlify Docs - Deployment
 
 ## How to Run
-Visit https://celadon-faun-3d2646.netlify.app
-
-
+Visit https://chic-liger-8dc150.netlify.app
+https://celadon-faun-3d2646.netlify.app
 https://jos-bakery.netlify.app or open index.html locally.
