@@ -1,0 +1,282 @@
+/* =================================================================
+   WEDE5020 Part 2 - Rosebank College / Jo's Bakery
+   2.2 Base Style /5, 2.3 Typography /5, 2.4 Layout /5, 2.5 Visual /5
+   ================================================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #0A1931;
+  --secondary: #185ADB;
+  --accent: #FFC947;
+  --text: #2D3748;
+  --bg: #F7FAFC;
+  --white: #FFFFFF;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text);
+  background-color: var(--bg);
+  padding: 1%;
+}
+
+/* 2.3 Typography Styles - font-family, size, weight, line-height, letter-spacing */
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.8rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+  margin-bottom: 1em;
+  max-width: 65ch;
+}
+
+/* 2.4 Layout Structure - Grid + Flexbox */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 5%;
+  background: var(--white);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+main {
+  display: grid;
+  grid-template-areas: 
+    "hero hero"
+    "content sidebar";
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero { grid-area: hero; }
+.content { grid-area: content; }
+.sidebar { grid-area: sidebar; }
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  margin-top: 3rem;
+  background: var(--primary);
+  color: var(--white);
+  border-radius: 12px;
+}
+
+/* 2.5 Visual Styles - color, background-color, border, box-shadow */
+.card {
+  background-color: var(--white);
+  color: var(--text);
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  padding: 1.5rem;
+}
+
+.btn {
+  background-color: var(--secondary);
+  color: var(--white);
+  border: none;
+  padding: 0.75em 1.5em;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Pseudo-classes :hover, :focus, :active /10 */
+a {
+  color: var(--secondary);
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.btn:hover {
+  background-color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+nav li:nth-child(odd) {
+  background-color: rgba(24,90,219,0.05);
+  border-radius: 6px;
+  padding: 0.2rem 0.5rem;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: var(--secondary);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(24,90,219,0.1);
+}
+
+/* Forms */
+input, textarea, select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #CBD5E0;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+/* 3.3 Responsive Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.responsive-img {
+  width: 100%;
+  height: auto;
+}
+
+/* Menu toggle hidden on desktop */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* =================================================================
+   3. Responsive Design
+   3.1 Breakpoints /10
+   ================================================================= */
+
+/* Tablet: 768px - 1024px */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  main {
+    grid-template-areas:
+      "hero"
+      "content"
+      "sidebar";
+    grid-template-columns: 1fr;
+  }
+  
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  h1 { font-size: 2rem; } /* Adjustment - Typography /5 */
+  h2 { font-size: 1.75rem; }
+  
+  header { padding: 1rem 3%; }
+}
+
+/* Mobile: less than 768px */
+@media screen and (max-width: 767px) {
+  html { font-size: 14px; }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  h1 { font-size: 1.75rem; } /* Adjustment - Typography /5 */
+  h2 { font-size: 1.5rem; }
+  p { font-size: 0.9rem; }
+
+  /* Adjustment - Navigation Menu /5 */
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    margin-top: 1rem;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block !important;
+    position: absolute;
+    top: 1.5rem;
+    right: 5%;
+  }
+
+  /* Adjustment - Images /5 */
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
