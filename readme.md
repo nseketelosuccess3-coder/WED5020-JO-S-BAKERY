@@ -40,5 +40,7 @@ All images scale with max-width:100%, typography shrinks correctly.
 - Netlify Docs - Deployment
 
 ## How to Run
-Visithttps://celadon-faun-3d2646.netlify.app
+Visit https://celadon-faun-3d2646.netlify.app
+
+
 https://jos-bakery.netlify.app or open index.html locally.
