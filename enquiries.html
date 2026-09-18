@@ -3,48 +3,99 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Enquiries - Jo's Bakery</title>
+<title>Services - Jo's Bakery Pretoria</title>
 <style>
-header{display:flex;justify-content:space-between;align-items:center;padding:15px 30px;background:white;border-bottom:1px solid #ddd}
-nav a{margin-left:20px;text-decoration:none;color:#1a3c8f;font-weight:bold}
-nav a:hover{color:#0066ff}
-main{max-width:900px;margin:30px auto;padding:0 15px;font-family:Arial;line-height:1.6}
-footer{background:#222;color:white;text-align:center;padding:15px;margin-top:40px}
-input,select,textarea{width:100%;padding:10px;margin:6px 0 12px;border:1px solid #ccc;border-radius:5px}
-button{width:100%;background:#0066ff;color:white;border:none;padding:12px;border-radius:5px;font-weight:bold;cursor:pointer}
+  body{margin:0;font-family:'Segoe UI',Arial,sans-serif;background:#FFF8F0;color:#3E2723}
+  header{display:flex;justify-content:space-between;align-items:center;padding:15px 40px;background:#3E2723;color:white;box-shadow:0 4px 10px rgba(0,0,0,0.3)}
+  header img{border-radius:50%;border:3px solid #FFC107}
+  nav a{margin-left:25px;text-decoration:none;color:#FFCC80;font-weight:bold}
+  nav a.active{color:#FFC107;border-bottom:2px solid #FFC107}
+  .hero{text-align:center;padding:50px 20px;background:linear-gradient(#3E2723,#5D4037);color:white}
+  .hero h1{color:#FFC107;font-size:42px;margin:0}
+  .container{max-width:1100px;margin:30px auto;padding:20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:25px}
+  .card{background:white;border-radius:15px;overflow:hidden;box-shadow:0 8px 20px rgba(0,0,0,0.12);transition:0.3s}
+  .card:hover{transform:translateY(-8px)}
+  .card img{width:100%;height:200px;object-fit:cover}
+  .card-content{padding:20px}
+  .card-content h3{margin:0 0 10px 0;color:#BF360C}
+  .price{font-size:22px;font-weight:bold;color:#2E7D32;background:#E8F5E9;padding:5px 12px;border-radius:20px;display:inline-block;margin:10px 0}
+  .card-content p{font-size:14px;color:#5D4037}
+  .card-content ul{padding-left:18px;font-size:13px}
+  footer{background:#22110A;color:#FFCC80;text-align:center;padding:20px;margin-top:40px}
 </style>
 </head>
 <body>
+
 <header>
-<img src="images/jo-bakerylogo.jpg" alt="Jo's Bakery Logo" width="110">
+<img src="images/jo-bakerylogo.jpg" alt="Logo" width="70">
 <nav>
 <a href="index.html">Home</a>
-<a href="services.html">Services</a>
+<a href="services.html" class="active">Services</a>
 <a href="about.html">About</a>
 <a href="enquiries.html">Enquiries</a>
 <a href="contact.html">Contact</a>
 </nav>
 </header>
-<main>
-<h1>Enquiries</h1>
-<p>Jo's Bakery is a local bakery that provides freshly baked and delicious products. We are committed to quality baked goods made with care and love. Order from Pretoria Central 0002.</p>
-<h2>How to Order</h2>
-<p>Cakes R150-R850 order 2 days before. Bread R18-R32, Pastries R12-R25, Pies R20-R45, Coffee R15-R28 order same day before 10am. Call 012 345 6789.</p>
-<form action="https://formspree.io/f/mldyyqko" method="POST">
-<input type="text" name="name" placeholder="Your Name" required>
-<input type="email" name="email" placeholder="Your Email" required>
-<select name="product">
-<option>Bread R18-32</option>
-<option>Cakes R150-850</option>
-<option>Pastries R12-25</option>
-<option>Pies R20-45</option>
-<option>Coffee R15-28</option>
-<option>Delivery R30</option>
-</select>
-<textarea name="message" rows="4" placeholder="Your order..." required></textarea>
-<button type="submit">Send Enquiry</button>
-</form>
-</main>
-<footer>© 2026 Jo's Bakery 0002</footer>
-</body>
-</html>
+
+<div class="hero">
+<h1>Our Fresh Services</h1>
+<p>Pretoria Central 0002 | Baked Fresh Daily from 5am | Delivery R30 (Free over R200)</p>
+</div>
+
+<div class="container">
+
+<!-- BREAD -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1549931319-a545dcf3d696?w=600" alt="Fresh Bread">
+<div class="card-content">
+<h3>🍞 Artisan Bread</h3>
+<span class="price">R18 - R32</span>
+<p>Crusty outside, soft inside. Baked every morning at 5am.</p>
+<ul>
+<li>White Loaf - R18</li>
+<li>Brown Wholewheat - R22</li>
+<li>Sourdough - R32</li>
+<li>Baguette - R25</li>
+</ul>
+</div>
+</div>
+
+<!-- CAKES -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600" alt="Cakes">
+<div class="card-content">
+<h3>🎂 Celebration Cakes</h3>
+<span class="price">R150 - R850</span>
+<p>Made to order for birthdays, weddings and special events.</p>
+<ul>
+<li>Small Round (15cm) - R150</li>
+<li>Medium (20cm) - R350</li>
+<li>Large Tiered - R650 - R850</li>
+<li>Cupcakes (6) - R120</li>
+</ul>
+</div>
+</div>
+
+<!-- PASTRIES -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600" alt="Pastries">
+<div class="card-content">
+<h3>🥐 Pastries & Scones</h3>
+<span class="price">R12 - R25</span>
+<p>Perfect with our coffee. Flaky, buttery, fresh.</p>
+<ul>
+<li>Croissant - R18</li>
+<li>Scone + Jam - R15</li>
+<li>Danish - R22</li>
+<li>Muffin - R12 - R25</li>
+</ul>
+</div>
+</div>
+
+<!-- PIES -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?w=600" alt="Pies">
+<div class="card-content">
+<h3>🥧 Savoury Pies</h3>
+<span class="price">R20 - R45</span>
+<p>Hearty lunch pies

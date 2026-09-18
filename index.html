@@ -3,32 +3,64 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jo's Bakery</title>
+<title>Jo's Bakery - Pretoria Central</title>
 <style>
-header{display:flex;justify-content:space-between;align-items:center;padding:15px 30px;background:white;border-bottom:1px solid #ddd}
-nav a{margin-left:20px;text-decoration:none;color:#1a3c8f;font-weight:bold}
-nav a:hover{color:#0066ff}
-main{max-width:900px;margin:30px auto;padding:0 15px;font-family:Arial;line-height:1.6}
-footer{background:#222;color:white;text-align:center;padding:15px;margin-top:40px}
+  body{margin:0;font-family:'Segoe UI',Arial,sans-serif;background:#FFF8F0;color:#3E2723;line-height:1.6}
+  header{display:flex;justify-content:space-between;align-items:center;padding:15px 40px;background:#3E2723;color:white;box-shadow:0 4px 10px rgba(0,0,0,0.3)}
+  header img{border-radius:50%;border:3px solid #FFC107}
+  nav a{margin-left:25px;text-decoration:none;color:#FFCC80;font-weight:bold;transition:0.3s}
+  nav a:hover, nav a.active{color:#FFC107;border-bottom:2px solid #FFC107;padding-bottom:3px}
+  .hero{background:linear-gradient(rgba(62,39,35,0.8), rgba(62,39,35,0.8)), url('images/bakery-bg.jpg');background-size:cover;color:white;text-align:center;padding:80px 20px}
+  .hero h1{font-size:48px;margin:0;color:#FFC107}
+  .hero p{font-size:18px;max-width:700px;margin:15px auto;color:#FFE0B2}
+  main{max-width:1000px;margin:-40px auto 40px auto;background:white;padding:30px;border-radius:15px;box-shadow:0 10px 30px rgba(0,0,0,0.15)}
+  .info-box{background:#FFF3E0;border-left:5px solid #FF9800;padding:15px;border-radius:8px;margin:20px 0}
+  .prices{display:flex;flex-wrap:wrap;gap:10px;margin:15px 0}
+  .prices span{background:#3E2723;color:#FFC107;padding:8px 15px;border-radius:20px;font-size:14px;font-weight:bold}
+  .location{font-weight:bold;background:#3E2723;color:white;padding:15px;text-align:center;border-radius:8px;margin-top:20px}
+  footer{background:#22110A;color:#FFCC80;text-align:center;padding:20px;margin-top:40px}
 </style>
 </head>
 <body>
+
 <header>
-<img src="images/jo-bakerylogo.jpg" alt="Jo's Bakery Logo" width="110">
+<img src="images/jo-bakerylogo.jpg" alt="Jo's Bakery Logo" width="80">
 <nav>
 <a href="index.html" class="active">Home</a>
 <a href="services.html">Services</a>
-<a href="about.html" class="active">About</a>
+<a href="about.html">About</a>
 <a href="enquiries.html">Enquiries</a>
 <a href="contact.html">Contact</a>
 </nav>
-</header><main>
+</header>
+
+<div class="hero">
 <h1>Welcome to Jo's Bakery</h1>
 <p>Jo's Bakery is a local bakery in Pretoria Central 0002 that provides freshly baked and delicious products. We bake fresh daily from 5am with care and love.</p>
-<h2>Prices & Products</h2>
-<p>🍞 Bread R18-R32 | 🎂 Cakes R150-R850 | 🥐 Pastries R12-R25 | 🥧 Pies R20-R45 | ☕ Coffee R15-R28 | 🚚 Delivery R30, Free over R200</p>
-<p><b>Location:</b> 123 Main Rd, Church Square, Pretoria Central, 0002 | <b>Phone:</b> 012 345 6789</p>
+</div>
+
+<main>
+<h2 style="color:#BF360C;">🍞 Prices & Products</h2>
+<div class="prices">
+<span>Bread R18-R32</span>
+<span>Cakes R150-R850</span>
+<span>Pastries R12-R25</span>
+<span>Pies R20-R45</span>
+<span>Coffee R15-R28</span>
+<span>🚚 Delivery R30, Free over R200</span>
+</div>
+
+<div class="info-box">
+<p><b>📍 Location:</b> 123 Main Rd, Church Square, Pretoria Central, 0002</p>
+<p><b>📞 Phone:</b> 012 345 6789</p>
+</div>
+
+<div class="location">
+Freshly Baked Daily in Pretoria | Open 5am - 7pm
+</div>
 </main>
-<footer>© 2026 Jo's Bakery - Pretoria 0002 | Prices R12-R850</footer>
+
+<footer>© 2026 Jo's Bakery - Pretoria 0002 | Prices R12-R850 | Proudly South African</footer>
+
 </body>
 </html>
