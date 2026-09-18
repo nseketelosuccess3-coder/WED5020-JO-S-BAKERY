@@ -1,84 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact Jo's Bakery | Location & Hours Pretoria</title>
-<meta name="description" content="Contact Jo's Bakery in Pretoria - find us, hours, send a general message.">
-<meta name="keywords" content="bakery Pretoria, contact Jo's Bakery, location">
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Jo's Bakery Pretoria Central</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
-  <img src="images/jo-bakery-logo.jpg" alt="Jo's Bakery Logo - Fresh Baked Goods Pretoria" width="120">
-  <button class="menu-toggle" onclick="document.querySelector('nav ul').classList.toggle('active')">☰</button>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="enquiries.html">Enquiries</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
 
-<main>
-  <section class="content">
-    <h1>Contact Us</h1>
-    <h2>Send Us a General Message</h2>
-    
-    <div class="card">
-      <form id="contactForm" action="https://formspree.io/f/mldbyqko" method="POST">
-        <label for="name">Full Name:</label><br>
-        <input type="text" id="name" name="name" required minlength="3" placeholder="Your name"><br><br>
+  <header>
+    <div class="logo">JOS</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="catalog.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="enquiries.html">Enquiries</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
 
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required placeholder="you@example.com"><br><br>
+  <section>
+    <p class="small-title">VISIT US - PRETORIA CENTRAL</p>
+    <h1>Find <span>Jo's Bakery</span></h1>
+    <p>Pretoria Central, Church Square, 0002</p>
 
-        <label for="type">Type of Message:</label><br>
-        <select id="type" name="messageType" required>
-          <option value="">-- Select --</option>
-          <option value="general">General Enquiry</option>
-          <option value="feedback">Feedback</option>
-          <option value="complaint">Complaint</option>
-        </select><br><br>
-
-        <label for="message">Full Message:</label><br>
-        <textarea id="message" name="message" rows="5" required minlength="20" placeholder="Type your message..."></textarea><br><br>
-
-        <button type="submit" class="btn">Send Email</button>
-        <button type="reset" class="btn" style="background:#999;">Clear</button>
-        <p id="formError" style="color:red; margin-top:1rem;"></p>
-        <p id="contactMsg" style="color:green;"></p>
-      </form>
+    <div class="cards">
+      <div class="card">
+        <h3>📍 Location</h3>
+        <p>
+          <b>Jo's Bakery</b><br>
+          Pretoria Central<br>
+          Church Square Area<br>
+          Pretoria, 0002<br>
+          Mon-Sat: 5am-6pm
+        </p>
+      </div>
+      <div class="card">
+        <h3>📞 Call Us</h3>
+        <p>
+          012 345 6789<br>
+          081 234 5678<br>
+          orders@josbakery.co.za<br>
+          WhatsApp Available
+        </p>
+      </div>
+      <div class="card">
+        <h3>🚚 Delivery</h3>
+        <p>
+          Pretoria Central<br>
+          Sunnyside, Arcadia<br>
+          Hatfield, Brooklyn<br>
+          & More!
+        </p>
+      </div>
     </div>
 
-    <h2>Find Us</h2>
-    <div id="map" style="height:350px; border-radius:12px; margin-top:1rem;"></div>
+    <!-- MAP - PRETORIA CENTRAL -->
+    <div class="map-box">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.5!2d28.1868!3d-25.7479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95619cbec65033%3A0xf66262b07a847b4!2sChurch%20Square%2C%20Pretoria%20Central!5e0!3m2!1sen!2sza!4v1700000000000" 
+        width="100%" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
+    </div>
+
+    <a href="https://maps.google.com/?q=Church+Square+Pretoria+Central" target="_blank" class="btn">
+      OPEN IN GOOGLE MAPS
+    </a>
+
   </section>
 
-  <aside class="sidebar card">
-    <h3>Jo's Bakery</h3>
-    <p><strong>Address:</strong> 123 Main Rd, Pretoria</p>
-    <p><strong>Hours:</strong> Mon-Sat 7am-6pm</p>
-    <p><strong>Phone:</strong> 012 345 6789</p>
-  </aside>
-</main>
+  <footer>
+    <p>© 2026 Jo's Bakery - Pretoria Central, 0002</p>
+  </footer>
 
-<footer>
-  <p>&copy; 2026 Jo's Bakery. All rights reserved. | <a href="sitemap.xml" style="color:white;">Sitemap</a></p>
-</footer>
-
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="script.js"></script>
-<script>
-  // Map init for contact page
-  var map = L.map('map').setView([-25.7479, 28.2293], 14);
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
-  L.marker([-25.7479, 28.2293]).addTo(map).bindPopup("Jo's Bakery - Pretoria");
-</script>
 </body>
 </html>

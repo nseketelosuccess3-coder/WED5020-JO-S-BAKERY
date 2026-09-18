@@ -1,71 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enquiries - Jo's Bakery</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enquiries - Jo's Bakery Pretoria Central</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-    <header>
+  <header>
+    <div class="logo">JOS</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="catalog.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="enquiries.html" class="active">Enquiries</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-        <img src="images/Jo's Bakery Logo.jpg" alt="Jo's Bakery Logo">
+  <section>
+    <p class="small-title">GET IN TOUCH - PRETORIA CENTRAL</p>
+    <h1>Make an <span>Enquiry</span></h1>
+    <p>Order cakes, bread, or ask about delivery in Pretoria Central</p>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="enquiries.html">Enquiries</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <form style="width:100%; max-width:550px; display:flex; flex-direction:column; gap:14px; text-align:left; background:#fff; padding:30px; border-radius:16px; border:1px solid #F5E6D3; margin-top:25px; box-shadow:0 8px 20px rgba(0,0,0,0.05);">
+      <label>Full Name:</label>
+      <input type="text" placeholder="Your name" required style="padding:12px; border-radius:8px; border:1px solid #ddd;">
+      <label>Email:</label>
+      <input type="email" placeholder="your@email.com" required style="padding:12px; border-radius:8px; border:1px solid #ddd;">
+      <label>Phone:</label>
+      <input type="tel" placeholder="012 345 6789" style="padding:12px; border-radius:8px; border:1px solid #ddd;">
+      <label>Enquiry Type:</label>
+      <select style="padding:12px; border-radius:8px; border:1px solid #ddd;">
+        <option>Birthday Cake Order</option>
+        <option>Wedding Cake</option>
+        <option>Daily Bread Order</option>
+        <option>Delivery - Pretoria Central</option>
+        <option>General Question</option>
+      </select>
+      <label>Your Message:</label>
+      <textarea rows="4" placeholder="Tell us what you need..." required style="padding:12px; border-radius:8px; border:1px solid #ddd;"></textarea>
+      <button type="submit" class="btn" style="border:none; cursor:pointer; width:100%;">SEND ENQUIRY</button>
+    </form>
 
-    </header>
+    <div style="width:100%; max-width:550px; margin:30px auto 0; border-radius:16px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.1); border:1px solid #F5E6D3;">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.5!2d28.1868!3d-25.7479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95619cbec65033%3A0xf66262b07a847b4!2sChurch%20Square%2C%20Pretoria%20Central!5e0!3m2!1sen!2sza!4v1700000000000" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
 
-    <main>
+  </section>
 
-        <h1>Make an Enquiry</h1>
-
-        <p>
-            Welcome to Jo's Bakery. Please complete the form below
-            if you have any questions about our products and services.
-        </p>
-
-        <form>
-
-            <label for="name">Full Name:</label><br>
-            <input type="text" id="name" name="name" required>
-            <br><br>
-
-            <label for="email">Email Address:</label><br>
-            <input type="email" id="email" name="email" required>
-            <br><br>
-
-            <label for="phone">Phone Number:</label><br>
-            <input type="tel" id="phone" name="phone">
-            <br><br>
-
-            <label for="enquiry">Your Enquiry:</label><br>
-            <textarea id="enquiry" name="enquiry" rows="5" cols="30"
-                required></textarea>
-            <br><br>
-
-            <button type="submit">Submit Enquiry</button>
-            <button type="reset">Clear</button>
-
-        </form>
-
-    </main>
-
-    <footer>
-
-        <p>&copy; 2026 Jo's Bakery. All rights reserved.</p>
-
-    </footer>
+  <footer>
+    <p>© 2026 Jo's Bakery - Pretoria Central, 0002</p>
+  </footer>
 
 </body>
-
 </html>
