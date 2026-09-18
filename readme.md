@@ -1,6 +1,6 @@
 # Jo's Bakery - WED5020 POE - Pretoria Central 0002
 
-**Live Website:** (https://unrivaled-medovik-a0ba01.netlify.app)
+**Live Website:** https://delightful-salmiakki-36b5d2.netlify.app
 **GitHub Repo:** https://github.com/labvmdnsbgn7r73pxgpvi/WED5020-JO-S-BAKERY
 **Student:** WED5020
 **Location:** 123 Main Road, Church Square, Pretoria Central, 0002
@@ -67,6 +67,8 @@ Open index.html or visit Netlify link.
 - Responsive with breakpoints tablet/mobile + adjustments
 - GitHub multiple descriptive commits
 - README with all info + Changelog + References
-Visit https://unrivaled-medovik-a0ba01.netlify.app
+Visit https://delightful-salmiakki-36b5d2.netlify.app
+
+https://unrivaled-medovik-a0ba01.netlify.app
 
 https://jos-bakery.netlify.app or open index.html locally.
