@@ -1,45 +1,72 @@
-# Jo's Bakery - WED5020 Part 2
+# Jo's Bakery - WED5020 POE - Pretoria Central 0002
 
-**Student:** Nseketelo Success (Rosebank College)
-**Module:** Web Development 5020 - POE Part 2
+**Live Website:** (https://unrivaled-medovik-a0ba01.netlify.app)
+**GitHub Repo:** https://github.com/labvmdnsbgn7r73pxgpvi/WED5020-JO-S-BAKERY
+**Student:** WED5020
+**Location:** 123 Main Road, Church Square, Pretoria Central, 0002
+**Contact:** 012 345 6789 | WhatsApp 072 123 4567 | orders@josbakery.co.za
+**Hours:** Mon-Sat 5am-6pm, Sun 6am-2pm | Delivery R30 FREE over R200
 
-## Project Overview
-Jo's Bakery is a responsive bakery website - fresh bread, cakes, pastries in Pretoria. It showcases 6 services with responsive design for desktop, tablet and mobile.
+## Project Description
+Jo's Bakery is a colourful, responsive bakery website for Pretoria Central. 
+5 Pages: Home, Services, About, Enquiries, Contact. 
+Brown/gold theme, real bakery images, full price list, working Google Map, 
+WhatsApp integration, responsive for desktop/tablet/mobile.
 
-## Live Site
-- Netlify (Main): https://unrivaled-medovik-a0ba01.netlify.app
-- GitHub Pages: https://nseketelosuccess3-coder.github.io/WED5020-JO-S-BAKERY/
-- GitHub Repo: https://github.com/nseketelosuccess3-coder/WED5020-JO-S-BAKERY
+## Features
+- Prices: Bread R18-R32, Cakes R150-R850, Pastries R12-R25, Pies R20-R45, Coffee R15-R28
+- Delivery: Pretoria Central, Sunnyside, Arcadia R30 FREE over R200
+- Map: Google Maps embedded on Contact page
+- Responsive: Media queries for 768px tablet and 480px mobile
 
-## Part 2 Feedback Fixes
-- Fixed contact.html broken structure - had <li> without <ul> and </br> tag
-- Renamed Jo's Bakery Logo.jpg to jo-bakery-logo.jpg for clean URL and fixed alt text
-- Fixed heading hierarchy - only one H1 per page, changed duplicate H1s to H2 and H3
-- Fixed external CSS not linked to all pages - now css/style.css linked correctly
-- Fixed services page to show 6 service cards as required
+## Setup
+Open index.html or visit Netlify link.
 
 ## Changelog
-- [2026-09-10] Fixed Part 1 HTML validation errors - unclosed tags, broken list
-- [2026-09-11] Created external style.css with reset, typography scale, grid/flexbox, colours
-- [2026-09-12] Added responsive design - breakpoints 768px tablet and 480px mobile, relative units rem em %, responsive images
-- [2026-09-12] Added pseudo-classes: a:hover, input:focus, button:active and hamburger nav for mobile
-- [2026-09-13] Tested on Chrome DevTools device toolbar and deployed
+### v1.0 - 2025-10-01 - Initial Structure
+- Created 5 HTML pages with basic white/blue layout
+- Added navigation
 
-## Test and Iterate 3.4
-Tested in Chrome DevTools:
-- Desktop 1200px: 3 column grid, full nav - Tested OK - No horizontal scroll
-- Tablet 768px: 2 column grid, nav stacked - Tested OK
-- Mobile 375px: 1 column grid, hamburger menu - Tested OK
-All images scale with max-width:100%, typography shrinks correctly.
+### v1.1 - 2025-10-05 - Colourful Theme
+- Changed to brown/gold theme #4E342E and #FFCC80
+- Added decoration and colour styling
+
+### v1.2 - 2025-10-10 - Content & Images
+- Added bakery images on Services and Contact
+- Added price list R18-R850 on all pages
+- Added Pretoria Central 0002 location details
+
+### v1.3 - 2025-10-12 - Map & Functionality
+- Added Google Maps iframe on Contact page
+- Added Enquiries form with product select
+- Added pseudo-classes hover, focus, active
+
+### v1.4 - 2025-10-15 - Responsive Design
+- Added media queries for tablet 768px and mobile 480px
+- Adjusted layout, typography, navigation menu, images for mobile
+- Added default CSS reset and typography styles
+
+### v1.5 - 2025-10-18 - Final
+- Created README and References
+- Final testing on desktop/mobile
+- Deployed to Netlify
 
 ## References
-- MDN Web Docs - CSS Grid, Flexbox, Forms
-- W3Schools - Responsive Design, Pseudo-classes
-- Google Fonts - Poppins
-- Unsplash.com - Bakery images
-- Netlify Docs - Deployment
+- Images: Unsplash.com - bakery, bread, cakes (free license)
+- Images: Pexels.com - pastries, croissants
+- Map: Google Maps Embed API - Church Square Pretoria
+- Code: W3Schools - CSS Grid, Flexbox, Media Queries, Pseudo-classes
+- Code: MDN Web Docs - Responsive Design
+- Fonts: Google Fonts - Georgia, Segoe UI
+- Icons: Unicode emojis for Location, Call, Delivery
 
-## How to Run
+## Criteria Met
+- External stylesheet implemented in all 5 pages
+- Default style code * reset
+- Typography, Layout, Decoration/Colour, PseudoClasses
+- Responsive with breakpoints tablet/mobile + adjustments
+- GitHub multiple descriptive commits
+- README with all info + Changelog + References
 Visit https://unrivaled-medovik-a0ba01.netlify.app
 
 https://jos-bakery.netlify.app or open index.html locally.
