@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Never Too Late Cake R450 | Jo's Bakery Rosebank 0181 | Custom Motivational Cake</title>
+    <meta name="description" content="Never Too Late Cake at Jo's Bakery 123 Main Road, Rosebank, Pretoria 0181 - Custom motivational birthday cake Medium R450 Large R650 - Fresh cream chocolate vanilla - Order 2 days ahead - Blue door 8a - Phone 012 345 6789 - -25.993,28.112">
+    <meta name="keywords" content="Never Too Late cake Rosebank 0181, motivational cake R450, custom birthday cake Rosebank, Jo's Bakery 123 Main Road, -25.993 28.112">
+    <meta name="author" content="Jo's Bakery - EST 2019">
+    <link rel="canonical" href="https://jos-bakery-rosebank-0181.netlify.app/never-too-late.html">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<header>
+    <div class="header-container">
+        <h1>Jo's Bakery - EST 2019 Rosebank 0181</h1>
+        <p>Freshly Baked Goodness Every Day - Blue door 8a Rosebank</p>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Our Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="enquiries.html">Enquiries</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main id="main-content">
+    <section class="page-banner">
+        <h2>Never Too Late Cake - Custom Motivational Cake</h2>
+        <p><a href="services.html">← Back to All Products</a> - Jo's Bakery Rosebank 0181</p>
+    </section>
+
+    <div class="contact-container">
+        <div class="contact-columns">
+            <section class="contact-details" style="text-align:center;">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600" alt="Never Too Late motivational birthday cake at Jo's Bakery 123 Main Road Rosebank Pretoria 0181 - Medium R450 - Custom design EST 2019" style="width:100%;max-width:500px;border-radius:10px;border:4px double #c49a3c;" loading="lazy">
+                <p style="margin-top:10px;font-weight:bold;">It's Never Too Late To Celebrate - Custom Message Cake</p>
+            </section>
+
+            <section class="contact-form">
+                <h2>Never Too Late Cake</h2>
+                <p><strong>Price: Small R250 | Medium R450 (Most Popular) | Large R650</strong></p>
+                <p><strong>Message:</strong> "It's Never Too Late" - Perfect for birthdays, graduations, new beginnings</p>
+                
+                <h3>About This Cake</h3>
+                <p>Custom motivational cake for those special moments when you want to remind someone - It's never too late to start, to dream, to celebrate. Made fresh at Jo's Bakery 123 Main Road, Rosebank, Pretoria 0181 - EST 2019.</p>
+                
+                <h3>Details</h3>
+                <ul style="text-align:left;">
+                    <li><strong>Sizes:</strong> Small 15cm R250 serves 4, Medium 20cm R450 serves 8, Large 25cm R650 serves 12</li>
+                    <li><strong>Flavors:</strong> Chocolate, vanilla, red velvet, banana - Fresh cream</li>
+                    <li><strong>Custom Text:</strong> Any message - Never Too Late, Congrats Grad, New Job, etc</li>
+                    <li><strong>Order:</strong> 2 days ahead - Same day if ordered before 8am</li>
+                    <li><strong>Baked:</strong> Fresh daily - Blue door 8a Rosebank - 5 min walk Rosebank College</li>
+                </ul>
+
+                <h3>All Jo's Bakery Prices</h3>
+                <p>Cakes Small R250 Medium R450 Large R650 | Banana Cake R280 Sliced R30 | Cupcakes R20 Box 6 R110 | Bread R25 baked 3am daily sold out 10am | Pies R35 Family R120 | Cookies R15 Box R80</p>
+
+                <div style="margin-top:20px;display:flex;gap:10px;flex-wrap:wrap;">
+                    <a href="enquiries.html?product=Never%20Too%20Late%20Cake%20Medium%20R450" class="button">Order - Never Too Late R450</a>
+                    <a href="contact.html" class="button" style="background:#1565C0;">Map -25.993,28.112</a>
+                </div>
+
+                <h3>Contact</h3>
+                <p>123 Main Road, Rosebank, Pretoria 0181 - Blue door 8a<br>Phone 012 345 6789 | WhatsApp 072 123 4567<br>Email orders@jobakery.co.za<br>Mon-Sat 5am-6pm Sun 6am-3pm</p>
+            </section>
+        </div>
+
+        <section class="content-section">
+            <h2>Why "Never Too Late"?</h2>
+            <div class="product-container">
+                <article class="product-card">
+                    <h3>Birthday</h3>
+                    <p>Forgot birthday? It's never too late to celebrate - Order same day before 8am.</p>
+                </article>
+                <article class="product-card">
+                    <h3>Graduation</h3>
+                    <p>Graduated late? It's never too late to be proud - Custom grad cakes R450.</p>
+                </article>
+                <article class="product-card">
+                    <h3>New Start</h3>
+                    <p>New job, new home - It's never too late for new beginnings - Blue door 8a</p>
+                </article>
+            </div>
+        </section>
+    </div>
+</main>
+<footer>
+    <p>&copy; 2026 Jo's Bakery - 123 Main Road, Rosebank, Pretoria 0181 - EST 2019</p>
+    <p>Never Too Late Cake R450 | Phone 012 345 6789 | orders@jobakery.co.za | -25.993,28.112</p>
+</footer>
+</body>
+</html>

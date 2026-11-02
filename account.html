@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Jo's Bakery 123 Main Road Rosebank Pretoria 0181 | Phone 012 345 6789</title>
+    <meta name="description" content="Contact Jo's Bakery at 123 Main Road, Rosebank, Pretoria 0181 - Phone 012 345 6789 - WhatsApp 072 123 4567 - Email orders@jobakery.co.za - Open Mon-Sat 5am-6pm Sun 6am-3pm - Blue door 8a - Map -25.993,28.112">
+    <meta name="keywords" content="Jo's Bakery contact Rosebank 0181, 123 Main Road Rosebank, phone 012 345 6789, orders@jobakery.co.za, Rosebank bakery map -25.993 28.112, blue door 8a">
+    <meta name="author" content="Jo's Bakery - EST 2019">
+    <link rel="canonical" href="https://jos-bakery-rosebank-0181.netlify.app/contact.html">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<header>
+    <div class="header-container">
+        <h1>Jo's Bakery - EST 2019 Rosebank 0181</h1>
+        <p>Freshly Baked Goodness Every Day - Blue door 8a Rosebank</p>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Our Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="enquiries.html">Enquiries</a></li>
+                <li><a href="contact.html" aria-current="page">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main id="main-content">
+    <section class="page-banner">
+        <h2>Contact Jo's Bakery - 123 Main Road Rosebank 0181</h2>
+        <p>We would love to hear from you - Phone 012 345 6789</p>
+    </section>
+
+    <div class="contact-container">
+        <div class="contact-columns">
+            <section class="contact-details">
+                <h2>Our Contact Details</h2>
+                <p><strong>Address:</strong> 123 Main Road, Rosebank, Pretoria 0181</p>
+                <p><strong>Landmark:</strong> Blue door 8a - 5 min walk from Rosebank College</p>
+                <p><strong>Phone:</strong> 012 345 6789</p>
+                <p><strong>WhatsApp:</strong> 072 123 4567</p>
+                <p><strong>Email:</strong> orders@jobakery.co.za</p>
+                
+                <h3>Opening Hours</h3>
+                <p><strong>Monday - Saturday:</strong> 5am - 6pm</p>
+                <p><strong>Sunday:</strong> 6am - 3pm</p>
+                <p><strong>Bread:</strong> Baked daily at 3am - Sold out by 10am</p>
+
+                <h3>Prices</h3>
+                <p>Cakes Small R250 Medium R450 Large R650 | Banana Cake R280 Sliced R30 | Cupcakes R20 Box 6 R110 | Bread R25 | Pies R35 Family R120 | Cookies R15 Box R80</p>
+
+                <h3>Coordinates</h3>
+                <p>Jo's Bakery: -25.993,28.112 | Rosebank College: -25.997,28.115</p>
+                
+                <a href="enquiries.html" class="button">Make an Enquiry</a>
+            </section>
+
+            <section class="contact-form">
+                <h2>Quick Enquiry</h2>
+                <form id="quickContactForm" novalidate>
+                    <div class="form-group">
+                        <label for="qName">Name *</label>
+                        <input type="text" id="qName" name="qName" required minlength="3" placeholder="Your name">
+                        <span class="error-message" id="qNameError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="qEmail">Email *</label>
+                        <input type="email" id="qEmail" name="qEmail" required placeholder="you@rosebank.co.za">
+                        <span class="error-message" id="qEmailError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="qMessage">Message *</label>
+                        <textarea id="qMessage" name="qMessage" rows="4" required minlength="10" placeholder="Hello Jo's Bakery..."></textarea>
+                        <span class="error-message" id="qMessageError"></span>
+                    </div>
+                    <button type="submit" class="button">Send Message</button>
+                    <p id="qSuccess" class="success-message" role="status" aria-live="polite" style="display:none;"></p>
+                </form>
+            </section>
+        </div>
+
+        <section class="content-section">
+            <h2>Find Us - Map -25.993,28.112</h2>
+            <p>Interactive map showing Jo's Bakery at 123 Main Road and Rosebank College - Walking route in blue dashed line #1565C0</p>
+            <div id="map" aria-label="Map showing Jo's Bakery location"></div>
+        </section>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 Jo's Bakery - 123 Main Road, Rosebank, Pretoria 0181 - EST 2019 - All rights reserved.</p>
+    <p><a href="index.html">Home</a> | <a href="services.html">Our Products</a> | <a href="about.html">About Us</a> | <a href="enquiries.html">Enquiries</a> | <a href="contact.html">Contact Us</a> | <a href="sitemap.xml">Sitemap</a></p>
+    <p>123 Main Road, Rosebank, Pretoria 0181 - Blue door 8a - Phone 012 345 6789 - Email orders@jobakery.co.za</p>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+    // Map
+    const mapEl = document.getElementById('map');
+    if(mapEl && typeof L !== 'undefined'){
+        const bakeryCoords = [-25.993, 28.112];
+        const collegeCoords = [-25.997, 28.115];
+        
+        const map = L.map('map').setView(bakeryCoords, 15);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        L.marker(bakeryCoords).addTo(map).bindPopup('<b>Jo\'s Bakery</b><br>123 Main Road, Rosebank, Pretoria 0181<br>Blue door 8a<br>Phone 012 345 6789<br>Bread baked 3am daily').openPopup();
+        L.marker(collegeCoords).addTo(map).bindPopup('<b>Rosebank College</b><br>5 min walk from Jo\'s Bakery');
+
+        const walkingRoute = L.polyline([bakeryCoords, collegeCoords], {
+            color: '#1565C0',
+            weight: 5,
+            dashArray: '10, 10',
+            opacity: 0.8
+        }).addTo(map);
+        
+        map.fitBounds(walkingRoute.getBounds().pad(0.2));
+        
+        setTimeout(()=>{ map.invalidateSize(); }, 300);
+    }
+
+    // Quick form validation
+    const qForm = document.getElementById('quickContactForm');
+    if(qForm){
+        qForm.addEventListener('submit', function(e){
+            e.preventDefault();
+            let valid = true;
+            document.getElementById('qNameError').textContent = '';
+            document.getElementById('qEmailError').textContent = '';
+            document.getElementById('qMessageError').textContent = '';
+
+            const name = document.getElementById('qName').value.trim();
+            const email = document.getElementById('qEmail').value.trim();
+            const msg = document.getElementById('qMessage').value.trim();
+
+            if(name.length < 3){ document.getElementById('qNameError').textContent = 'Name min 3 letters'; valid = false; }
+            if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){ document.getElementById('qEmailError').textContent = 'Valid email required'; valid = false; }
+            if(msg.length < 10){ document.getElementById('qMessageError').textContent = 'Message min 10 chars'; valid = false; }
+
+            if(valid){
+                const s = document.getElementById('qSuccess');
+                s.style.display = 'block';
+                s.textContent = `Thank you ${name}! Message received - We will reply to ${email} within 2 hours - Jo's Bakery 123 Main Road Rosebank 0181`;
+                qForm.reset();
+            }
+        });
+    }
+});
+</script>
+</body>
+</html>

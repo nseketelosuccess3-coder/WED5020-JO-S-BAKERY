@@ -1,3 +1,48 @@
 User-agent: *
 Allow: /
+
+# Jo's Bakery - 123 Main Road, Rosebank, Pretoria 0181 - EST 2019
+# Phone 012 345 6789 - orders@jobakery.co.za - Coordinates -25.993,28.112
+# Blue door 8a - 5 min walk Rosebank College - Bread baked 3am daily
+
+# Main pages - Allow all for Googlebot
+Allow: /index.html
+Allow: /services.html
+Allow: /product.html
+Allow: /product-detail.html
+Allow: /never-too-late.html
+Allow: /about.html
+Allow: /enquiries.html
+Allow: /contact.html
+Allow: /cart.html
+Allow: /account.html
+Allow: /admin.html
+
+# Assets
+Allow: /style.css
+Allow: /script.js
+Allow: /account.js
+Allow: /cart.js
+Allow: /product-detail.js
+Allow: /search.js
+Allow: /sitemap.xml
+
+# Disallow admin and private
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.pdf
+Disallow: /cgi-bin/
+Disallow: /*?*cart=
+Disallow: /*?*checkout=
+
+# Crawl-delay for bots
+Crawl-delay: 1
+
+# Sitemaps - Jo's Bakery Rosebank 0181
 Sitemap: https://jos-bakery-rosebank-0181.netlify.app/sitemap.xml
+Sitemap: https://jos-bakery-rosebank-0181.netlify.app/sitemap.xml
+
+# For Google - Location based SEO
+# Jo's Bakery at 123 Main Road, Rosebank, Pretoria 0181
+# Keywords: Cakes R250-R650, Banana Cake R280, Cupcakes R20, Bread R25 baked 3am, Pies R35, Cookies R15
+# Coordinates: -25.993,28.112 - Blue door 8a Rosebank

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin | Jo's Bakery Rosebank 0181 - Orders Dashboard</title>
+    <meta name="description" content="Admin dashboard for Jo's Bakery 123 Main Road Rosebank Pretoria 0181 - Manage orders, enquiries, products">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="author" content="Jo's Bakery - EST 2019">
+    <link rel="canonical" href="https://jos-bakery-rosebank-0181.netlify.app/admin.html">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<header>
+    <div class="header-container">
+        <h1>Jo's Bakery Admin - Rosebank 0181</h1>
+        <p>Orders Dashboard - 123 Main Road - Blue door 8a - EST 2019</p>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Our Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="enquiries.html">Enquiries</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main id="main-content">
+    <section class="page-banner">
+        <h2>Admin Dashboard - Jo's Bakery</h2>
+        <p>Manage orders and enquiries - 123 Main Road Rosebank 0181 - Phone 012 345 6789</p>
+    </section>
+
+    <section class="content-section">
+        <h2>Login - Admin Only</h2>
+        <form id="adminLogin" novalidate style="max-width:400px;">
+            <div class="form-group">
+                <label for="adminUser">Username *</label>
+                <input type="text" id="adminUser" required placeholder="admin" minlength="3">
+                <span class="error-message" id="adminUserError"></span>
+            </div>
+            <div class="form-group">
+                <label for="adminPass">Password *</label>
+                <input type="password" id="adminPass" required minlength="4" placeholder="****">
+                <span class="error-message" id="adminPassError"></span>
+            </div>
+            <button type="submit" class="button">Login</button>
+            <p id="adminMsg" class="success-message" style="display:none;"></p>
+        </form>
+    </section>
+
+    <section class="content-section" id="dashboard" style="display:none;">
+        <h2>Today's Summary - Sold out yesterday 10am</h2>
+        <div class="product-container">
+            <article class="product-card">
+                <h3>Orders</h3>
+                <p><strong>12 Orders Today</strong><br>Cakes: 5 | Bread: 20 loaves @ R25 | Pies: 8</p>
+                <p>Total: R2,850 - Baked 3am daily</p>
+            </article>
+            <article class="product-card">
+                <h3>Enquiries</h3>
+                <p><strong>7 New Enquiries</strong><br>Custom cakes: 3 | Bread: 2 | Other: 2</p>
+                <p>Inbox: orders@jobakery.co.za</p>
+            </article>
+            <article class="product-card">
+                <h3>Stock Alert</h3>
+                <p><strong>Low Stock</strong><br>Bread: Sold out by 10am | Banana Cake: 2 left | Pies: 5 left</p>
+                <p>Bake more for tomorrow 3am</p>
+            </article>
+        </div>
+
+        <h2>Recent Enquiries</h2>
+        <div style="overflow-x:auto;">
+            <table style="width:100%;border-collapse:collapse;background:#fff;">
+                <tr style="background:#f4c6d2;"><th style="padding:10px;border:1px solid #ccc;">Name</th><th style="padding:10px;border:1px solid #ccc;">Type</th><th style="padding:10px;border:1px solid #ccc;">Phone</th><th style="padding:10px;border:1px solid #ccc;">Status</th></tr>
+                <tr><td style="padding:8px;border:1px solid #eee;">Jo Smith</td><td style="padding:8px;border:1px solid #eee;">Cakes R450 Medium</td><td style="padding:8px;border:1px solid #eee;">0123456789</td><td style="padding:8px;border:1px solid #eee;">New</td></tr>
+                <tr><td style="padding:8px;border:1px solid #eee;">Maria N.</td><td style="padding:8px;border:1px solid #eee;">Bread R25 x10</td><td style="padding:8px;border:1px solid #eee;">0821234567</td><td style="padding:8px;border:1px solid #eee;">Done</td></tr>
+                <tr><td style="padding:8px;border:1px solid #eee;">Thabo K.</td><td style="padding:8px;border:1px solid #eee;">Banana Cake R280</td><td style="padding:8px;border:1px solid #eee;">0719876543</td><td style="padding:8px;border:1px solid #eee;">New</td></tr>
+            </table>
+        </div>
+
+        <h2>Product Prices - Update</h2>
+        <p>Cakes Small R250 Medium R450 Large R650 | Banana Cake R280 Sliced R30 | Cupcakes R20 Box 6 R110 | Bread R25 | Pies R35 Family R120 | Cookies R15 Box R80</p>
+        <p><strong>Address:</strong> 123 Main Road, Rosebank, Pretoria 0181 - Blue door 8a - Coordinates -25.993,28.112</p>
+        <p><strong>Contact:</strong> Phone 012 345 6789 | WhatsApp 072 123 4567 | Email orders@jobakery.co.za</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Jo's Bakery Admin - 123 Main Road, Rosebank, Pretoria 0181 - Private - noindex</p>
+    <p><a href="index.html">Home</a> | <a href="contact.html">Contact Us</a></p>
+</footer>
+
+<script>
+document.getElementById('adminLogin').addEventListener('submit', function(e){
+  e.preventDefault();
+  let valid = true;
+  document.getElementById('adminUserError').textContent='';
+  document.getElementById('adminPassError').textContent='';
+  const u = document.getElementById('adminUser').value.trim();
+  const p = document.getElementById('adminPass').value.trim();
+  if(u.length < 3){ document.getElementById('adminUserError').textContent='Username min 3'; valid=false; }
+  if(p.length < 4){ document.getElementById('adminPassError').textContent='Password min 4'; valid=false; }
+  if(valid){
+    document.getElementById('adminMsg').style.display='block';
+    document.getElementById('adminMsg').textContent='Login success - Welcome admin - Dashboard loaded - Jo\'s Bakery Rosebank 0181';
+    document.getElementById('dashboard').style.display='block';
+    this.style.display='none';
+  }
+});
+</script>
+</body>
+</html>
