@@ -1,0 +1,37 @@
+:root{--paper:#FFF8F0;--cream:#FFF3E0;--ink:#3E2723;--crust:#5D4037;--wheat:#FFCC80;--line:#C8A88A}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:1.1rem/2.1 'Patrick Hand',cursive}
+h1,h2,h3{font-family:'Dancing Script',cursive;font-weight:700;color:var(--crust)}
+a{color:var(--crust)}img{max-width:100%;height:auto;display:block}
+.skip{position:absolute;left:-9999px}.skip:focus{left:1rem;top:1rem;background:var(--wheat);color:#000;padding:.5rem;z-index:99;position:fixed}
+.bar{max-width:78rem;margin:0 auto;padding:18px 6%;display:flex;justify-content:space-between;align-items:center;background:#3E2723}
+.brand{font:700 30px 'Dancing Script';color:#FFCC80;text-decoration:none}
+nav a{color:#FFCC80;text-decoration:none;margin-left:18px}nav a[aria-current=page]{color:#FFC107;border-bottom:2px solid #FFC107}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:50px;padding:80px 6%;align-items:center;background:linear-gradient(135deg,#8D6E63,#5D4037);color:#FFCC80}
+.hero h1{font-size:48px;line-height:1.2;transform:rotate(-0.4deg)}
+.tag{background:#FFCC80;color:#3E2723;padding:6px 14px;border-radius:20px;display:inline-block;margin-bottom:16px;font-weight:bold;font-size:12px}
+.strip{background:#FFF3E0;padding:18px;text-align:center;font-weight:bold;border:2px dashed #4E342E;margin:30px 6%;border-radius:12px}
+.btn{background:#FFCC80;color:#3E2723;padding:14px 28px;border-radius:30px;text-decoration:none;font-weight:bold;display:inline-block;border:none;cursor:pointer;font-family:'Patrick Hand'}
+.btn.alt{background:white;color:#5D4037;border:1px solid #C8A88A}
+.tabs button{padding:14px 22px;margin-right:10px;border-radius:30px;border:1px solid #C8A88A;background:white;cursor:pointer;font-family:'Patrick Hand';font-size:16px}
+.tabs button[aria-selected=true]{background:#5D4037;color:#FFCC80}
+.panel{display:none;padding:24px;background:white;border-radius:14px;margin-top:16px;box-shadow:0 4px 12px rgba(0,0,0,.08)}
+.panel.on{display:block}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:50px;padding:50px 6%}
+.note-human{background:#FFF3E0;border:2px dashed #4E342E;padding:22px;border-radius:14px;margin:24px 0;transform:rotate(-0.3deg)}
+#map{height:420px;border-radius:14px;border:2px dashed #4E342E;box-shadow:4px 4px 0 #FFCC80;z-index:1}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
+.card{background:white;border-radius:14px;overflow:hidden;box-shadow:4px 4px 0 #FFCC80;transition:transform .2s,box-shadow .2s;border:1px solid #EFEBE9}
+.card:hover{transform:translateY(-6px) rotate(-0.3deg);box-shadow:8px 8px 0 #FFCC80}
+.card-body{padding:16px}.cat{font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#8D6E63;font-weight:bold}
+.price{font-family:'Dancing Script';font-size:24px;color:#5D4037;font-weight:700}
+.filters{display:flex;gap:12px;flex-wrap:wrap;margin:20px 0}
+.filters input,.filters select{padding:12px 16px;border-radius:30px;border:1px solid #C8A88A;font-family:'Patrick Hand';font-size:15px}
+.err{color:#a4161a;font-size:12px;min-height:14px;margin:4px 0 8px}
+.gal{display:grid;gap:20px;grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
+.gal img{border-radius:14px;cursor:zoom-in;box-shadow:4px 4px 0 #FFCC80;height:200px;object-fit:cover}
+#lb{position:fixed;inset:0;background:rgba(62,39,35,.92);display:none;flex-direction:column;align-items:center;justify-content:center;z-index:50;color:#FFCC80}
+#lb.on{display:flex}#lb img{max-width:90vw;max-height:65vh;border-radius:14px;box-shadow:8px 8px 0 #FFCC80}
+#lb .x{position:absolute;top:20px;right:20px;background:#FFCC80;color:#3E2723;border:none;padding:10px 18px;border-radius:20px;cursor:pointer;font-family:'Patrick Hand';font-weight:bold}
+footer .in{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;background:#3E2723;color:#D7CCC8;padding:32px 6%}
+@media(max-width:760px){.hero{grid-template-columns:1fr;gap:30px;padding:60px 5%}.cols{grid-template-columns:1fr;gap:30px}footer .in{grid-template-columns:1fr}.filters{flex-direction:column}}
