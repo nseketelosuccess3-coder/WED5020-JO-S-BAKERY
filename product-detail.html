@@ -1,139 +1,40 @@
 <!DOCTYPE html>
 <html lang="en-ZA">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banana Cake R280 | Jo's Bakery 123 Main Road Rosebank 0181 | Famous Gogo Recipe</title>
-    <meta name="description" content="Banana Cake at Jo's Bakery 123 Main Road, Rosebank, Pretoria 0181 - Whole R280 Slice R30 - Famous Gogo recipe from 1970 - Moist with walnuts - Baked 5am daily - Blue door 8a - Phone 012 345 6789 - orders@jobakery.co.za - Coordinates -25.993,28.112">
-    <meta name="keywords" content="Banana cake R280 Rosebank 0181, Jo's Bakery banana cake, Gogo recipe 1970, sliced R30, 123 Main Road Rosebank, -25.993 28.112">
-    <meta name="author" content="Jo's Bakery - EST 2019">
-    <link rel="canonical" href="https://jos-bakery-rosebank-0181.netlify.app/product-detail.html">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banana Cake R280 - Jo's Bakery Rosebank 0181</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<a href="#main-content" class="skip-link">Skip to main content</a>
-<header>
-    <div class="header-container">
-        <h1>Jo's Bakery - EST 2019 Rosebank 0181</h1>
-        <p>Freshly Baked Goodness Every Day - Blue door 8a Rosebank - Bread baked 3am</p>
-        <nav aria-label="Main navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Our Products</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="enquiries.html">Enquiries</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+  <div style="background:#f8c8d0; padding:15px;">
+    <a href="product.html">← Back to All Products</a> - Jo's Bakery Rosebank 0181
+  </div>
 
-<main id="main-content">
-    <section class="page-banner">
-        <h2>Product Detail - Banana Cake</h2>
-        <p><a href="services.html">← Back to All Products</a> - Jo's Bakery Rosebank 0181</p>
+  <main>
+    <section style="padding:20px;">
+      <div style="border:2px solid #c49a3c; padding:10px; border-radius:8px; max-width:600px;">
+        <!-- FIXED: images/bananacake.webp -->
+        <img src="images/bananacake.webp" 
+             alt="Banana cake whole at Jo's Bakery 123 Main Road Rosebank Pretoria 0181 - R280 - Gogo recipe from 1970 - Moist with walnuts - EST 2019"
+             style="width:100%; height:auto; display:block;">
+        <p style="text-align:center; margin-top:8px;">Banana cake whole at Jo's Bakery 123 Main Road Rosebank Pretoria 0181 - R280 - Gogo recipe from 1970 - Moist with walnuts - EST 2019</p>
+      </div>
+
+      <div style="display:flex; gap:10px; margin-top:15px;">
+        <img src="images/bananacake.webp" alt="Banana cake slice R30 Jo's Bakery Rosebank 0181" style="width:80px; height:80px; object-fit:cover; border:2px solid #8b3a50; cursor:pointer;" onclick="document.querySelector('section img').src=this.src">
+        <img src="images/freshBread.webp" alt="Fresh bread R25 Jo's Bakery Rosebank 0181" style="width:80px; height:80px; object-fit:cover; border:1px solid #ccc; cursor:pointer;" onclick="document.querySelector('section img').src=this.src">
+        <img src="images/cookies.webp" alt="Cookies R15 Jo's Bakery Rosebank 0181" style="width:80px; height:80px; object-fit:cover; border:1px solid #ccc; cursor:pointer;" onclick="document.querySelector('section img').src=this.src">
+      </div>
+      <p style="font-size:12px;">Click image to enlarge - Gallery lightbox</p>
+
+      <h2>Banana Cake - R280 Whole | R30 Slice</h2>
+      <p><strong>Jo's Bakery 123 Main Road Rosebank 0181 - Blue door 8a - Phone 012 345 6789 - -25.993,28.112</strong></p>
+      <p>Gogo recipe from 1970 - Moist with walnuts - EST 2019 - Baked 3am daily</p>
+      <button onclick="addToCart('Banana Cake Whole', 280)">Add to Cart - R280</button>
     </section>
+  </main>
 
-    <div class="contact-container">
-        <div class="contact-columns">
-            <section class="contact-details" style="text-align:center;">
-                <img id="mainProductImage" src="https://images.unsplash.com/photo-1571115177098-24a42c2c2e1a?w=600" alt="Banana cake whole at Jo's Bakery 123 Main Road Rosebank Pretoria 0181 - R280 - Gogo recipe from 1970 - Moist with walnuts - EST 2019" style="width:100%;max-width:500px;border-radius:10px;border:4px double #c49a3c;cursor:zoom-in;" loading="lazy">
-                <div style="display:flex;gap:10px;justify-content:center;margin-top:10px;">
-                    <img src="https://images.unsplash.com/photo-1571115177098-24a42c2c2e1a?w=150" alt="Banana cake slice R30 Jo's Bakery Rosebank 0181" class="thumb" style="width:80px;height:80px;object-fit:cover;border-radius:5px;cursor:pointer;border:2px solid #c49a3c;" onclick="document.getElementById('mainProductImage').src=this.src.replace('w=150','w=600')">
-                    <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?w=150" alt="Banana cake ingredients - fresh bananas Jo's Bakery" class="thumb" style="width:80px;height:80px;object-fit:cover;border-radius:5px;cursor:pointer;border:2px solid #ccc;" onclick="document.getElementById('mainProductImage').src=this.src.replace('w=150','w=600')">
-                    <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=150" alt="Banana cake box packaging Jo's Bakery Blue door 8a" class="thumb" style="width:80px;height:80px;object-fit:cover;border-radius:5px;cursor:pointer;border:2px solid #ccc;" onclick="document.getElementById('mainProductImage').src=this.src.replace('w=150','w=600')">
-                </div>
-                <p style="font-size:0.9em;margin-top:5px;">Click image to enlarge - Gallery lightbox</p>
-            </section>
-
-            <section class="contact-form">
-                <h2>Banana Cake - Famous Gogo Recipe</h2>
-                <p><strong>Price: Whole R280 | Sliced R30 per slice</strong></p>
-                <p><strong>Availability:</strong> Daily - Baked 5am - Best seller since 2019</p>
-                <p><strong>Address:</strong> 123 Main Road, Rosebank, Pretoria 0181 - Blue door 8a - 5 min walk Rosebank College</p>
-                
-                <h3>Description</h3>
-                <p>Our famous banana cake made from Gogo's recipe from 1970. Moist, soft, with walnuts and fresh bananas. Family recipe passed down 3 generations. Made fresh every morning at Jo's Bakery - EST 2019.</p>
-                
-                <h3>Details</h3>
-                <ul style="text-align:left;">
-                    <li><strong>Weight:</strong> 1.2kg whole</li>
-                    <li><strong>Ingredients:</strong> Fresh bananas, flour, sugar, walnuts, eggs, butter - No preservatives</li>
-                    <li><strong>Baked:</strong> Daily at 5am - Sold until sold out</li>
-                    <li><strong>Storage:</strong> 3 days room temp, 7 days fridge</li>
-                    <li><strong>Allergens:</strong> Contains nuts, gluten, dairy, eggs</li>
-                </ul>
-
-                <h3>Prices at Jo's Bakery Rosebank</h3>
-                <p>Cakes Small R250 Medium R450 Large R650 | Banana Cake R280 Sliced R30 | Cupcakes R20 Box 6 R110 | Bread R25 baked 3am daily sold out 10am | Pies R35 Family R120 | Cookies R15 Box R80</p>
-
-                <div style="margin-top:20px;display:flex;gap:10px;flex-wrap:wrap;">
-                    <a href="enquiries.html?product=Banana%20Cake%20R280" class="button">Enquire - Banana Cake R280</a>
-                    <a href="contact.html" class="button" style="background:#1565C0;">View Map -25.993,28.112</a>
-                </div>
-
-                <h3 style="margin-top:20px;">Contact to Order</h3>
-                <p>Phone: 012 345 6789 | WhatsApp: 072 123 4567 | Email: orders@jobakery.co.za<br>Mon-Sat 5am-6pm Sun 6am-3pm - Bread baked 3am daily</p>
-                
-                <div id="lightbox" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.8);z-index:9999;justify-content:center;align-items:center;flex-direction:column;">
-                    <span style="position:absolute;top:20px;right:30px;color:#fff;font-size:40px;cursor:pointer;" onclick="document.getElementById('lightbox').style.display='none'">&times;</span>
-                    <img id="lightboxImg" src="" alt="" style="max-width:90%;max-height:80%;border:4px double #c49a3c;">
-                    <p id="lightboxCaption" style="color:#fff;margin-top:10px;text-align:center;max-width:80%;"></p>
-                </div>
-            </section>
-        </div>
-
-        <section class="content-section">
-            <h2>Other Products You May Like</h2>
-            <div class="product-container">
-                <article class="product-card">
-                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400" alt="Chocolate cake Medium R450 at Jo's Bakery 123 Main Road Rosebank 0181" loading="lazy">
-                    <h3>Cakes - R250-R650</h3>
-                    <p>Birthday cakes Medium R450 - Custom designs</p>
-                    <a href="enquiries.html" class="button">Enquire</a>
-                </article>
-                <article class="product-card">
-                    <img src="https://images.unsplash.com/photo-1549931319-a545dcf3d696?w=400" alt="Bread loaf R25 baked 3am daily Jo's Bakery Rosebank 0181 Blue door 8a" loading="lazy">
-                    <h3>Bread - R25</h3>
-                    <p>Baked 3am daily - Sold out by 10am - White/Brown</p>
-                    <a href="enquiries.html" class="button">Enquire</a>
-                </article>
-                <article class="product-card">
-                    <img src="https://images.unsplash.com/photo-1599785209707-a456fc1337bb?w=400" alt="Cupcakes R20 Box 6 R110 Jo's Bakery 123 Main Road Rosebank" loading="lazy">
-                    <h3>Cupcakes - R20</h3>
-                    <p>R20 each Box 6 R110 - Vanilla chocolate</p>
-                    <a href="enquiries.html" class="button">Enquire</a>
-                </article>
-            </div>
-        </section>
-    </div>
-</main>
-
-<footer>
-    <p>&copy; 2026 Jo's Bakery - 123 Main Road, Rosebank, Pretoria 0181 - EST 2019 - All rights reserved.</p>
-    <p><a href="index.html">Home</a> | <a href="services.html">Our Products</a> | <a href="about.html">About Us</a> | <a href="enquiries.html">Enquiries</a> | <a href="contact.html">Contact Us</a></p>
-    <p>Banana Cake R280 Sliced R30 | Blue door 8a | -25.993,28.112 | Phone 012 345 6789</p>
-</footer>
-
-<script>
-document.addEventListener('DOMContentLoaded', function(){
-  const mainImg = document.getElementById('mainProductImage');
-  const lightbox = document.getElementById('lightbox');
-  const lightboxImg = document.getElementById('lightboxImg');
-  const caption = document.getElementById('lightboxCaption');
-  if(mainImg){
-    mainImg.addEventListener('click', function(){
-      lightboxImg.src = this.src;
-      lightboxImg.alt = this.alt;
-      caption.textContent = this.alt;
-      lightbox.style.display = 'flex';
-    });
-  }
-  lightbox.addEventListener('click', function(e){
-    if(e.target === lightbox) lightbox.style.display='none';
-  });
-});
-</script>
+  <script src="js/cart.js" defer></script>
 </body>
 </html>

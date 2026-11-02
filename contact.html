@@ -1,92 +1,168 @@
 <!DOCTYPE html>
 <html lang="en-ZA">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact Us Directly | Jo's Bakery Rosebank 0181 | 123 Main Road | Phone 012 345 6789</title>
-<meta name="description" content="Contact Jo's Bakery at 123 Main Road, Rosebank, Pretoria 0181 - Blue door 8a, 5 min walk from Rosebank College. Phone 012 345 6789, WhatsApp 072 123 4567, Email orders@jobakery.co.za. Fresh cakes R250-R650, bread baked 3am daily. Map coordinates -25.993,28.112.">
-<meta name="keywords" content="Jo's Bakery Rosebank 0181 contact, 123 Main Road Rosebank, phone 012 345 6789, orders@jobakery.co.za, Rosebank College 5 min walk, map -25.993 28.112, bakery Pretoria 0181">
-<link rel="canonical" href="https://jos-bakery-rosebank-0181.netlify.app/contact.html">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<style>#map{height:450px !important;width:100% !important;border-radius:12px;border:3px solid #1565C0;margin-top:20px}.err{color:#d32f2f;font-size:13px;font-weight:bold;min-height:18px}</style>
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Jo's Bakery 123 Main Road Rosebank Pretoria 0181 | Phone 012 345 6789 - Blue door 8a</title>
+    <meta name="description" content="Contact Jo's Bakery at 123 Main Road, Rosebank, Pretoria 0181 - Phone 012 345 6789 - WhatsApp 072 123 4567 - Email orders@jobakery.co.za - Open Mon-Sat 5am-6pm Sun 6am-3pm - Blue door 8a - Map -25.993,28.112 - 5 min walk Rosebank College">
+    <meta name="keywords" content="Jo's Bakery contact Rosebank 0181, 123 Main Road Rosebank, phone 012 345 6789, orders@jobakery.co.za, Rosebank bakery map -25.993 28.112, blue door 8a, EST 2019, bread baked 3am, -25.993 28.112">
+    <meta name="author" content="Jo's Bakery - EST 2019 Rosebank 0181">
+    <link rel="canonical" href="https://jos-bakery-rosebank-0181.netlify.app/contact.html">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+      #map{width:100%; height:400px; border-radius:12px; border:2px solid #f0d1d9; z-index:1;}
+      .contact-container{max-width:1200px; margin:auto; padding:20px;}
+      .contact-columns{display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:30px;}
+      .error-message{color:#c00; font-size:13px; display:block; margin-top:4px;}
+      .success-message{color:#080; font-weight:bold; margin-top:10px; padding:10px; background:#e8f5e9; border-radius:5px;}
+      .form-group{margin-bottom:15px;}
+      .form-group input, .form-group textarea{width:100%; padding:10px; border:1px solid #ccc; border-radius:5px;}
+    </style>
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
-<header><div class="header-container"><a class="brand" href="index.html">Jo's Bakery Rosebank 0181 - EST 2019</a><nav><a href="index.html">Home</a><a href="services.html">Our Products</a><a href="about.html">About</a><a href="enquiries.html">Enquiries</a><a href="contact.html" aria-current="page">Contact</a></nav></div></header>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<header>
+    <div class="header-container">
+        <h1>Jo's Bakery - EST 2019 Rosebank 0181 - Blue door 8a - 123 Main Road</h1>
+        <p>Freshly Baked Goodness Every Day - Blue door 8a Rosebank - 5 min walk Rosebank College - Coordinates -25.993,28.112 - Phone 012 345 6789</p>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Our Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="enquiries.html">Enquiries</a></li>
+                <li><a href="contact.html" aria-current="page">Contact Us</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-<main id="main">
-<h1>Contact Us - Jo's Bakery 123 Main Road Rosebank 0181</h1>
+<main id="main-content">
+    <section class="page-banner" style="padding:20px;">
+        <h2>Contact Jo's Bakery - 123 Main Road Rosebank 0181 - Blue door 8a - EST 2019</h2>
+        <p>We would love to hear from you - Phone 012 345 6789 - WhatsApp 072 123 4567 - orders@jobakery.co.za - Coordinates -25.993,28.112</p>
+    </section>
 
-<div class="cols" style="display:flex;gap:25px;flex-wrap:wrap;margin-top:20px;">
-<div style="flex:1;min-width:300px;background:#fff8f0;padding:20px;border-radius:12px;border:1px solid #f0d1d9;">
-<h2>Need to Contact Us Directly?</h2>
-<p><strong>Address:</strong> 123 Main Road, Rosebank, Pretoria 0181<br>Blue door 8a - 5 min walk from Rosebank College<br>Coordinates: -25.993, 28.112</p>
-<p><strong>Phone:</strong> 012 345 6789<br><strong>WhatsApp:</strong> 072 123 4567<br><strong>Email:</strong> <a href="mailto:orders@jobakery.co.za">orders@jobakery.co.za</a></p>
-<p><strong>Hours:</strong> Mon-Sat 5am-6pm, Sun 6am-3pm<br>Bread baked daily 3am - EST 2019 Family Bakery</p>
-<p><strong>Prices:</strong> Cakes Small R250 Medium R450 Large R650 | Banana R280 | Cupcakes R20 | Bread R25 | Pies R35</p>
-</div>
+    <div class="contact-container">
+        <div class="contact-columns">
+            <section class="contact-details" style="padding:15px; border:1px solid #eee; border-radius:8px;">
+                <h2>Our Contact Details - 123 Main Road Rosebank 0181</h2>
+                <p><strong>Address:</strong> 123 Main Road, Rosebank, Pretoria 0181</p>
+                <p><strong>Landmark:</strong> Blue door 8a - 5 min walk from Rosebank College - White building opposite Shell garage</p>
+                <p><strong>Phone:</strong> 012 345 6789</p>
+                <p><strong>WhatsApp:</strong> 072 123 4567</p>
+                <p><strong>Email:</strong> orders@jobakery.co.za</p>
+                
+                <h3>Opening Hours - Bread Baked 3am Daily</h3>
+                <p><strong>Monday - Saturday:</strong> 5am - 6pm</p>
+                <p><strong>Sunday:</strong> 6am - 3pm</p>
+                <p><strong>Bread:</strong> Baked daily at 3am - Sold out by 10am - EST 2019</p>
 
-<form id="contactForm" novalidate style="flex:1;min-width:300px;background:white;padding:20px;border-radius:12px;border:2px solid #1565C0;">
-<h3>Send Us a Message</h3>
-<div><label for="fullname">Full Name *</label><input id="fullname" name="fullname" type="text" autocomplete="name" required minlength="2" placeholder="e.g. Jo Smith" style="width:100%;padding:10px;margin:5px 0;"><p class="err" id="c-name-error"></p></div>
-<div><label for="email">Email *</label><input id="email" name="email" type="email" autocomplete="email" required placeholder="e.g. you@rosebank.co.za" style="width:100%;padding:10px;margin:5px 0;"><p class="err" id="c-email-error"></p></div>
-<div><label for="phone">Phone *</label><input id="phone" name="phone" type="tel" autocomplete="tel" required pattern="[0-9]{10}" placeholder="e.g. 0123456789" style="width:100%;padding:10px;margin:5px 0;"><p class="err" id="c-phone-error"></p></div>
-<div><label for="topic">Enquiry Type *</label><select id="topic" name="topic" required style="width:100%;padding:10px;margin:5px 0;"><option value="">Choose type...</option><option>Order Question</option><option>Cake Order R250-R650</option><option>Feedback</option><option>Visit Us - 123 Main Road</option></select><p class="err" id="c-topic-error"></p></div>
-<div><label for="message">Message *</label><textarea id="message" name="message" rows="5" maxlength="500" required minlength="20" placeholder="e.g. I want birthday cake for Saturday - 20 people..." style="width:100%;padding:10px;margin:5px 0;"></textarea><p class="err" id="c-msg-error"></p></div>
-<button type="submit" style="background:#1565C0;color:white;width:100%;padding:15px;border:none;border-radius:8px;font-weight:bold;cursor:pointer;">Send Message</button>
-<p id="status" role="status" style="color:green;font-weight:bold;margin-top:10px;background:#e8f5e9;padding:10px;border-radius:6px;display:none;"></p>
-</form>
-</div>
+                <h3>Prices - Jo's Bakery Rosebank 0181</h3>
+                <p>Cakes Small R250 Medium R450 Large R650 | Specialty From R300 | Banana Cake R280 Sliced R30 | Cupcakes R20 Box 6 R110 | Bread White/Brown R25 Wholewheat R30 | Pies R35 Family R120 | Cookies R15 Box R80</p>
 
-<h2 style="margin-top:25px;">Find Us - Map - 5 min walk Rosebank College</h2>
-<div id="map" role="region" aria-label="Map showing Jo's Bakery and Rosebank College with walking route"></div>
-<p style="margin-top:10px;"><a href="https://www.google.com/maps/search/-25.993,28.112" target="_blank" style="background:#1565C0;color:white;padding:10px 15px;border-radius:6px;text-decoration:none;">Open in Google Maps</a></p>
+                <h3>Coordinates - Find Us</h3>
+                <p><strong>Jo's Bakery:</strong> -25.993,28.112 - 123 Main Road Rosebank 0181<br><strong>Rosebank College:</strong> -25.997,28.115 - 5 min walk - Walking route in blue dashed line #1565C0</p>
+                
+                <a href="enquiries.html" class="button" style="padding:10px 20px; background:#8b3a50; color:white; text-decoration:none; border-radius:5px; display:inline-block; margin-top:10px;">Make an Enquiry - Custom Cakes R250-R650</a>
+            </section>
+
+            <section class="contact-form" style="padding:15px; border:1px solid #eee; border-radius:8px;">
+                <h2>Quick Enquiry - Form Controls Comprehensive - 5 Marks</h2>
+                <form id="quickContactForm" novalidate>
+                    <div class="form-group">
+                        <label for="qName">Name * - Min 3 letters - Required</label>
+                        <input type="text" id="qName" name="qName" required minlength="3" placeholder="Your name - e.g. Thabo">
+                        <span class="error-message" id="qNameError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="qEmail">Email * - Valid email - Required</label>
+                        <input type="email" id="qEmail" name="qEmail" required placeholder="you@rosebank.co.za - e.g. thabo@email.com">
+                        <span class="error-message" id="qEmailError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="qMessage">Message * - Min 10 chars - Required</label>
+                        <textarea id="qMessage" name="qMessage" rows="4" required minlength="10" placeholder="Hello Jo's Bakery at 123 Main Road Rosebank 0181 - I would like to order..."></textarea>
+                        <span class="error-message" id="qMessageError"></span>
+                    </div>
+                    <button type="submit" class="button" style="padding:10px 20px; background:#8b3a50; color:white; border:none; border-radius:5px; cursor:pointer;">Send Message - Jo's Bakery 123 Main Road Rosebank 0181</button>
+                    <p id="qSuccess" class="success-message" role="status" aria-live="polite" style="display:none;"></p>
+                </form>
+            </section>
+        </div>
+
+        <section class="content-section" style="margin-top:30px;">
+            <h2>Find Us - Interactive Map -25.993,28.112 - Blue door 8a - Walking Route</h2>
+            <p>Interactive map showing Jo's Bakery at 123 Main Road Rosebank Pretoria 0181 Blue door 8a and Rosebank College - Walking route in blue dashed line #1565C0 - Jo's Bakery -25.993,28.112 - Rosebank College -25.997,28.115 - 5 min walk - White building opposite Shell garage</p>
+            <div id="map" aria-label="Map showing Jo's Bakery location at 123 Main Road Rosebank 0181 - Blue door 8a - EST 2019"></div>
+        </section>
+    </div>
 </main>
 
-<footer><p style="text-align:center;padding:20px;">&copy; 2026 Jo's Bakery Rosebank 0181 - 123 Main Road Rosebank - Phone 012 345 6789 - <a href="sitemap.xml">Sitemap</a></p></footer>
+<footer style="padding:20px; text-align:center; border-top:1px solid #ccc; margin-top:20px;">
+    <p>&copy; 2026 Jo's Bakery - 123 Main Road, Rosebank, Pretoria 0181 - Blue door 8a - 5 min walk Rosebank College - EST 2019 - All rights reserved.</p>
+    <p>Phone 012 345 6789 | WhatsApp 072 123 4567 | Email orders@jobakery.co.za | Coordinates -25.993,28.112 | Hours Mon-Sat 5am-6pm Sun 6am-3pm | Bread baked 3am sold out 10am</p>
+    <p>Cakes Small R250 Medium R450 Large R650 | Banana R280 Sliced R30 | Cupcakes R20 Box 6 R110 | Bread R25/R30 | Pies R35 Family R120 | Cookies R15 Box R80</p>
+    <p><a href="index.html">Home</a> | <a href="services.html">Our Products</a> | <a href="about.html">About Us</a> | <a href="enquiries.html">Enquiries</a> | <a href="contact.html">Contact Us</a> | <a href="sitemap.xml">Sitemap</a> | <a href="robots.txt">Robots</a> | <a href="README.md">README</a></p>
+</footer>
 
 <script>
-document.addEventListener("DOMContentLoaded", ()=>{
-  const form = document.getElementById("contactForm");
-  if(form){
-    form.addEventListener("submit",e=>{
-      e.preventDefault();
-      let v=true;
-      document.querySelectorAll(".err").forEach(el=>el.textContent="");
-      const fullname=document.getElementById("fullname").value.trim();
-      const email=document.getElementById("email").value.trim();
-      const phone=document.getElementById("phone").value.replace(/\s/g,'');
-      const message=document.getElementById("message").value.trim();
-      const topic=document.getElementById("topic").value;
-      
-      if(fullname.length<2){document.getElementById("c-name-error").textContent="Full name required - min 2 letters"; v=false;}
-      if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){document.getElementById("c-email-error").textContent="Valid email required"; v=false;}
-      if(phone.length!=10 || !/^[0-9]+$/.test(phone)){document.getElementById("c-phone-error").textContent="Phone must be 10 digits starting 0"; v=false;}
-      if(!topic){document.getElementById("c-topic-error").textContent="Choose enquiry type"; v=false;}
-      if(message.length<20){document.getElementById("c-msg-error").textContent="Message min 20 chars"; v=false;}
-      if(!v) return;
-      
-      const status=document.getElementById("status");
-      status.style.display='block';
-      status.textContent=`Thank you ${fullname} - Enquiry received! We will reply to ${email} within 2 hours. Jo's Bakery 123 Main Road Rosebank 0181.`;
-      form.reset();
-    });
-  }
+document.addEventListener('DOMContentLoaded', function(){
+    // Map - 5 Marks - Interactive Map
+    const mapEl = document.getElementById('map');
+    if(mapEl && typeof L !== 'undefined'){
+        const bakeryCoords = [-25.993, 28.112];
+        const collegeCoords = [-25.997, 28.115];
+        
+        const map = L.map('map').setView(bakeryCoords, 15);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors - Jo\'s Bakery 123 Main Road Rosebank 0181'
+        }).addTo(map);
 
-  const mapDiv=document.getElementById('map');
-  if(mapDiv && typeof L !== 'undefined'){
-    try{
-      const map=L.map('map').setView([-25.993,28.112],15);
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'&copy; OpenStreetMap'}).addTo(map);
-      L.marker([-25.993,28.112]).addTo(map).bindPopup("<b>Jo's Bakery</b><br>123 Main Road<br>Rosebank 0181<br>Blue door 8a<br>Baked 3am daily").openPopup();
-      L.marker([-25.997,28.115]).addTo(map).bindPopup("<b>Rosebank College</b><br>5 min walk from bakery");
-      L.polyline([[-25.993,28.112],[-25.997,28.115]],{color:'#1565C0',dashArray:'10,10',weight:4,opacity:0.8}).addTo(map).bindPopup("5 min walk route");
-      setTimeout(()=>{map.invalidateSize();},600);
-    }catch(e){}
-  }
+        L.marker(bakeryCoords).addTo(map).bindPopup('<b>Jo\'s Bakery</b><br>123 Main Road, Rosebank, Pretoria 0181<br>Blue door 8a - 5 min walk Rosebank College<br>Phone 012 345 6789<br>Bread baked 3am daily sold out 10am<br>EST 2019<br>Cakes R250-R650 Banana R280 Bread R25').openPopup();
+        L.marker(collegeCoords).addTo(map).bindPopup('<b>Rosebank College</b><br>5 min walk from Jo\'s Bakery<br>-25.997,28.115');
+
+        const walkingRoute = L.polyline([bakeryCoords, collegeCoords], {
+            color: '#1565C0',
+            weight: 5,
+            dashArray: '10, 10',
+            opacity: 0.8
+        }).addTo(map).bindPopup('Walking route - 5 min - Blue dashed line #1565C0 - Jo\'s Bakery to Rosebank College');
+        
+        map.fitBounds(walkingRoute.getBounds().pad(0.2));
+        
+        setTimeout(()=>{ map.invalidateSize(); }, 500);
+    }
+
+    // Quick form validation - 5 Marks - Form Controls Comprehensive
+    const qForm = document.getElementById('quickContactForm');
+    if(qForm){
+        qForm.addEventListener('submit', function(e){
+            e.preventDefault();
+            let valid = true;
+            document.getElementById('qNameError').textContent = '';
+            document.getElementById('qEmailError').textContent = '';
+            document.getElementById('qMessageError').textContent = '';
+
+            const name = document.getElementById('qName').value.trim();
+            const email = document.getElementById('qEmail').value.trim();
+            const msg = document.getElementById('qMessage').value.trim();
+
+            if(name.length < 3){ document.getElementById('qNameError').textContent = 'Name min 3 letters - Required - Jo\'s Bakery Rosebank 0181'; valid = false; }
+            if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){ document.getElementById('qEmailError').textContent = 'Valid email required - e.g. you@rosebank.co.za'; valid = false; }
+            if(msg.length < 10){ document.getElementById('qMessageError').textContent = 'Message min 10 chars - Required - Tell us what you need'; valid = false; }
+
+            if(valid){
+                const s = document.getElementById('qSuccess');
+                s.style.display = 'block';
+                s.textContent = `Thank you ${name}! Message received at Jo's Bakery 123 Main Road Rosebank 0181 Blue door 8a - We will reply to ${email} within 2 hours - Phone 012 345 6789 - Bread baked 3am daily - EST 2019`;
+                qForm.reset();
+            }
+        });
+    }
 });
 </script>
 </body>

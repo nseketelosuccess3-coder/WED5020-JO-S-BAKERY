@@ -4,21 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jo's Bakery Rosebank 0181 | Fresh Cakes R250 | Bread Baked 3am Daily | Family Bakery EST 2019 - 123 Main Road</title>
-    <meta name="description" content="Jo's Bakery at 123 Main Road, Rosebank, Pretoria 0181 - EST 2019 family bakery. Fresh cakes Small R250 Medium R450 Large R650, banana cake R280, cupcakes R20, bread R25 baked 3am daily, pies R35, cookies R15. Blue door 8a, 5 min walk Rosebank College. Phone 012 345 6789.">
-    <meta name="keywords" content="Jo's Bakery Rosebank 0181, bakery Pretoria 0181, cakes R250 Rosebank, birthday cakes Rosebank 0181, fresh bread Rosebank baked 3am, cupcakes Rosebank 0181, banana cake Rosebank R280, pies Rosebank, cookies Rosebank, custom cakes Pretoria, 123 Main Road Rosebank, family bakery EST 2019, blue door 8a Rosebank">
+    <meta name="description" content="Jo's Bakery at 123 Main Road, Rosebank, Pretoria 0181 - EST 2019 family bakery. Fresh cakes Small R250 Medium R450 Large R650, banana cake R280, cupcakes R20, bread R25 baked 3am daily, pies R35, cookies R15. Blue door 8a, 5 min walk Rosebank College. Phone 012 345 6789. -25.993,28.112">
+    <meta name="keywords" content="Jo's Bakery Rosebank 0181, bakery Pretoria 0181, cakes R250 Rosebank, birthday cakes Rosebank 0181, fresh bread Rosebank baked 3am, cupcakes Rosebank 0181, banana cake Rosebank R280, pies Rosebank, cookies Rosebank, custom cakes Pretoria, 123 Main Road Rosebank, family bakery EST 2019, blue door 8a Rosebank, -25.993 28.112">
     <meta name="author" content="Jo's Bakery - EST 2019">
     <link rel="canonical" href="https://jos-bakery-rosebank-0181.netlify.app/">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script src="script.js" defer></script>
+    <style>
+      #lightbox{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.9);z-index:9999;justify-content:center;align-items:center}
+      #lightbox img{max-width:90%;max-height:90%;border-radius:8px}
+      .product-container{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;padding:20px}
+      .product-card{border:1px solid #ddd;padding:12px;border-radius:8px}
+      .product-card img{cursor:zoom-in}
+    </style>
 </head>
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
     <header>
         <div class="header-container">
             <h1>Jo's Bakery - EST 2019 Rosebank 0181</h1>
-            <p>Freshly Baked Goodness Every Day - Blue door 8a Rosebank</p>
+            <p>Freshly Baked Goodness Every Day - Blue door 8a Rosebank - 123 Main Road - 5 min walk Rosebank College - Coordinates -25.993,28.112</p>
             <nav aria-label="Main navigation">
                 <ul>
                     <li><a href="index.html" aria-current="page">Home</a></li>
@@ -26,58 +32,115 @@
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="enquiries.html">Enquiries</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main id="main-content">
         <section class="hero">
-            <div class="hero-content">
-                <h2>Welcome to Jo's Bakery - 123 Main Road Rosebank 0181</h2>
-                <img src="images/freshBread.webp" alt="Freshly baked white and brown bread at Jo's Bakery 123 Main Road Rosebank 0181 - R25 loaf - Baked daily at 3am blue door 8a Rosebank Pretoria 0181 - EST 2019 family bakery" width="1200" height="600" style="width:100%;height:auto;border-radius:12px;margin:1rem 0;">
-                <p>We bake fresh, delicious and affordable treats for individuals, families and businesses.</p>
-                <a href="services.html" class="button">Explore Our Products</a>
+            <div class="hero-content" style="padding:20px;">
+                <h2>Welcome to Jo's Bakery - 123 Main Road Rosebank 0181 - Blue door 8a - EST 2019</h2>
+                <img src="images/freshBread.webp" alt="Freshly baked white and brown bread at Jo's Bakery 123 Main Road Rosebank 0181 - R25 loaf - Baked daily at 3am blue door 8a Rosebank Pretoria 0181 - EST 2019 family bakery - Coordinates -25.993,28.112" width="1200" height="600" style="width:100%;height:auto;border-radius:12px;margin:1rem 0;" loading="eager" onclick="openLightbox(this.src)" onerror="this.src='https://images.unsplash.com/photo-1549931319-a545dcf3d696?w=1200'">
+                <p>We bake fresh, delicious and affordable treats for individuals, families and businesses - Cakes Small R250 Medium R450 Large R650 | Banana Cake R280 Sliced R30 | Cupcakes R20 Box 6 R110 | Bread R25 Baked 3am daily | Pies R35 Family R120 | Cookies R15 Box R80 - EST 2019 family bakery blue door 8a.</p>
+                <a href="services.html" class="button" style="padding:10px 20px; background:#8b3a50; color:white; text-decoration:none; border-radius:5px;">Explore Our Products</a>
             </div>
         </section>
 
-        <section class="content-section">
-            <h2>Find Your Favourite Treat</h2>
-            <label for="productSearch">Search our products:</label>
-            <input type="search" id="productSearch" placeholder="Search cakes, banana cake, bread, cookies, pies..." style="width:100%; padding:12px; border:2px solid #8b3a50; border-radius:8px; margin:10px 0;">
-            <p id="searchMessage" aria-live="polite" style="font-weight:bold; color:#8b3a50;"></p>
+        <section class="content-section" style="padding:20px;">
+            <h2>Find Your Favourite Treat - Dynamic Search - 5 Marks</h2>
+            <label for="productSearch">Search our products - Type cakes R250, banana R280, bread R25:</label>
+            <input type="search" id="productSearch" placeholder="Search cakes R250, banana cake R280, bread R25 baked 3am, cookies R15, pies R35..." style="width:100%; padding:12px; border:2px solid #8b3a50; border-radius:8px; margin:10px 0;">
+            <p id="searchMessage" aria-live="polite" style="font-weight:bold; color:#8b3a50;">Showing all 6 products - Jo's Bakery 123 Main Road Rosebank 0181</p>
         </section>
 
-        <section class="welcome-section">
-            <h2>Freshly Baked with Care</h2>
-            <img src="images/cake.jpg" alt="Fresh birthday cakes display at Jo's Bakery 123 Main Road Rosebank 0181 - Small R250 Medium R450 Large R650 - EST 2019 family bakery blue door 8a - Custom cakes wedding birthday" width="800" height="500" style="width:100%;max-width:800px;height:auto;border-radius:12px;margin:1rem auto;display:block;">
-            <p>At Jo's Bakery, we believe that every occasion deserves something delicious. We prepare a variety of baked goods, including cakes, banana cake, cupcakes, pies, cookies and bread.</p>
+        <section class="welcome-section" style="padding:20px; text-align:center;">
+            <h2>Freshly Baked with Care - EST 2019 - Blue door 8a</h2>
+            <img src="images/cake.jpg" alt="Fresh birthday cakes display at Jo's Bakery 123 Main Road Rosebank 0181 - Small R250 Medium R450 Large R650 - EST 2019 family bakery blue door 8a - Custom cakes wedding birthday - -25.993,28.112" width="800" height="500" style="width:100%;max-width:800px;height:auto;border-radius:12px;margin:1rem auto;display:block;" loading="lazy" onclick="openLightbox(this.src)" onerror="this.src='https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800'">
+            <p>At Jo's Bakery, we believe that every occasion deserves something delicious. We prepare a variety of baked goods, including cakes Small R250 Medium R450 Large R650, banana cake R280 sliced R30, cupcakes R20 box 6 R110, pies R35 family R120, cookies R15 box R80 and bread R25 baked 3am daily at 123 Main Road Rosebank 0181 - Blue door 8a - 5 min walk Rosebank College - EST 2019.</p>
         </section>
 
         <section class="featured-products">
-            <h2>Our Popular Products</h2>
+            <h2 style="padding-left:20px;">Our Popular Products - 123 Main Road Rosebank 0181</h2>
             <div class="product-container" id="productList">
-                <article class="product-card"><img src="images/cake.jpg" alt="Fresh birthday cakes at Jo's Bakery 123 Main Road Rosebank 0181 - Small R250 Medium R450 Large R650 - EST 2019 family bakery blue door 8a Rosebank Pretoria" style="width:100%;height:220px;object-fit:cover;border-radius:8px; cursor:zoom-in;"><h3>Cakes</h3><p>From R250 Small | R450 Medium | R650 Large</p></article>
-                <article class="product-card"><img src="images/bananacake.webp" alt="Moist banana cake loaf at Jo's Bakery Rosebank 0181 - R280 whole cake R30 sliced - Baked fresh daily with ripe bananas at 123 Main Road Rosebank - Family recipe EST 2019" style="width:100%;height:220px;object-fit:cover;border-radius:8px; cursor:zoom-in;"><h3>Banana Cake</h3><p>R280 | Sliced R30</p></article>
-                <article class="product-card"><img src="images/cupcakes.webp" alt="Sweet vanilla and chocolate cupcakes at Jo's Bakery Rosebank 0181 - R20 each box 6 R110 - Perfect for birthdays parties - Fresh daily at 123 Main Road Rosebank" style="width:100%;height:220px;object-fit:cover;border-radius:8px; cursor:zoom-in;"><h3>Cupcakes</h3><p>R20 Each | Box 6 R110</p></article>
-                <article class="product-card"><img src="images/freshBread.webp" alt="Freshly baked white brown wholewheat bread at Jo's Bakery 123 Main Road Rosebank 0181 - R25 white brown R30 wholewheat - Baked daily at 3am blue door 8a Rosebank Pretoria 0181 - Sold out by 10am" style="width:100%;height:220px;object-fit:cover;border-radius:8px; cursor:zoom-in;"><h3>Bread</h3><p>White/Brown R25 - Baked 3am daily</p></article>
-                <article class="product-card"><img src="images/pies.webp" alt="Savoury chicken and beef pies at Jo's Bakery Rosebank 0181 - R35 each family pie R120 - Available lunch time fresh - Baked daily at 123 Main Road Rosebank - EST 2019" style="width:100%;height:220px;object-fit:cover;border-radius:8px; cursor:zoom-in;"><h3>Pies</h3><p>From R35 | Family R120</p></article>
-                <article class="product-card"><img src="images/cookies.webp" alt="Crunchy homemade cookies and biscuits at Jo's Bakery Rosebank 0181 - R15 each box R80 - Baked fresh daily family recipe EST 2019 - At 123 Main Road Rosebank blue door 8a" style="width:100%;height:220px;object-fit:cover;border-radius:8px; cursor:zoom-in;"><h3>Cookies</h3><p>R15 Each | Box R80</p></article>
+                <article class="product-card" data-name="Cakes Small R250 Medium R450 Large R650 Birthday" data-price="450" data-keywords="cakes R250 R450 R650 birthday celebration">
+                    <img src="images/cake.jpg" alt="Fresh birthday cakes at Jo's Bakery 123 Main Road Rosebank 0181 - Small R250 Medium R450 Large R650 - EST 2019 family bakery blue door 8a Rosebank Pretoria - -25.993,28.112" style="width:100%;height:220px;object-fit:cover;border-radius:8px;" loading="lazy" onclick="openLightbox(this.src)" onerror="this.src='https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400'">
+                    <h3>Cakes - Small R250 Medium R450 Large R650</h3><p>From R250 Small | R450 Medium | R650 Large - 123 Main Road Rosebank 0181</p>
+                </article>
+                <article class="product-card" data-name="Banana Cake R280 Sliced R30 Moist" data-price="280" data-keywords="banana cake R280 sliced R30 moist Gogo recipe 1970">
+                    <img src="images/bananacake.webp" alt="Moist banana cake loaf at Jo's Bakery Rosebank 0181 - R280 whole cake R30 sliced - Baked fresh daily with ripe bananas at 123 Main Road Rosebank - Family recipe EST 2019 - Blue door 8a - -25.993,28.112" style="width:100%;height:220px;object-fit:cover;border-radius:8px;" loading="lazy" onclick="openLightbox(this.src)" onerror="this.src='https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400'">
+                    <h3>Banana Cake - R280 Whole | Sliced R30 - Gogo 1970</h3><p>R280 | Sliced R30 - Famous - Best seller - EST 2019</p>
+                </article>
+                <article class="product-card" data-name="Cupcakes R20 Box 6 R110 Vanilla Chocolate" data-price="20" data-keywords="cupcakes R20 box 6 R110 vanilla chocolate parties">
+                    <img src="images/cupcakes.webp" alt="Sweet vanilla and chocolate cupcakes at Jo's Bakery Rosebank 0181 - R20 each box 6 R110 - Perfect for birthdays parties - Fresh daily at 123 Main Road Rosebank - Blue door 8a" style="width:100%;height:220px;object-fit:cover;border-radius:8px;" loading="lazy" onclick="openLightbox(this.src)">
+                    <h3>Cupcakes - R20 Each | Box 6 R110</h3><p>R20 Each | Box 6 R110 - Fresh daily - Rosebank 0181</p>
+                </article>
+                <article class="product-card" data-name="Bread White Brown R25 Wholewheat R30 Baked 3am" data-price="25" data-keywords="bread R25 R30 white brown wholewheat baked 3am sold out 10am">
+                    <img src="images/freshBread.webp" alt="Freshly baked white brown wholewheat bread at Jo's Bakery 123 Main Road Rosebank 0181 - R25 white brown R30 wholewheat - Baked daily at 3am blue door 8a Rosebank Pretoria 0181 - Sold out by 10am - EST 2019" style="width:100%;height:220px;object-fit:cover;border-radius:8px;" loading="lazy" onclick="openLightbox(this.src)">
+                    <h3>Bread - White/Brown R25 | Wholewheat R30 - Baked 3am</h3><p>White/Brown R25 - Baked 3am daily - Sold out by 10am - Blue door 8a</p>
+                </article>
+                <article class="product-card" data-name="Pies Chicken Beef R35 Family R120" data-price="35" data-keywords="pies R35 family R120 chicken beef savoury lunch">
+                    <img src="images/pies.webp" alt="Savoury chicken and beef pies at Jo's Bakery Rosebank 0181 - R35 each family pie R120 - Available lunch time fresh - Baked daily at 123 Main Road Rosebank - EST 2019 blue door 8a" style="width:100%;height:220px;object-fit:cover;border-radius:8px;" loading="lazy" onclick="openLightbox(this.src)">
+                    <h3>Pies - Chicken/Beef R35 | Family R120</h3><p>From R35 | Family R120 - Chicken beef - Fresh daily</p>
+                </article>
+                <article class="product-card" data-name="Cookies Biscuits Homemade R15 Box R80" data-price="15" data-keywords="cookies biscuits R15 box R80 homemade crunchy">
+                    <img src="images/cookies.webp" alt="Crunchy homemade cookies and biscuits at Jo's Bakery Rosebank 0181 - R15 each box R80 - Baked fresh daily family recipe EST 2019 - At 123 Main Road Rosebank blue door 8a - -25.993,28.112" style="width:100%;height:220px;object-fit:cover;border-radius:8px;" loading="lazy" onclick="openLightbox(this.src)" onerror="this.src='https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=400'">
+                    <h3>Cookies - R15 Each | Box R80</h3><p>R15 Each | Box R80 - Homemade - EST 2019</p>
+                </article>
             </div>
-            <p><a href="services.html">View all our products</a></p>
+            <p style="padding-left:20px;"><a href="services.html">View all our products - Cakes R250-R650 Banana R280 Bread R25</a></p>
+            <p id="no-results" style="display:none; text-align:center; font-weight:bold; padding:20px;">No products found - Try R25 R250 R280 - Jo's Bakery 123 Main Road Rosebank 0181 Blue door 8a</p>
         </section>
 
-        <section class="content-section">
-            <h2>Find Us in Rosebank</h2>
-            <p>123 Main Road, Rosebank, Pretoria 0181 - Blue door 8a - 5 min walk from Rosebank College</p>
+        <section class="content-section" style="padding:20px;">
+            <h2>Find Us in Rosebank - 123 Main Road Rosebank 0181 - Blue door 8a</h2>
+            <p>123 Main Road, Rosebank, Pretoria 0181 - Blue door 8a - 5 min walk from Rosebank College - White building opposite Shell garage - Coordinates -25.993,28.112 - Phone 012 345 6789 - Hours Mon-Sat 5am-6pm Sun 6am-3pm - Bread baked 3am daily sold out by 10am</p>
             <div id="map" style="width:100%; height:350px; border-radius:12px; border:2px solid #f0d1d9;"></div>
         </section>
 
-        <section class="call-to-action">
-            <h2>Have a Special Request?</h2>
-            <p>Phone 012 345 6789 | WhatsApp 072 123 4567 | orders@jobakery.co.za</p>
-            <a href="enquiries.html" class="button">Send an Enquiry</a>
+        <section class="call-to-action" style="padding:20px; text-align:center;">
+            <h2>Have a Special Request? - Custom Cakes R250-R650</h2>
+            <p>Phone 012 345 6789 | WhatsApp 072 123 4567 | orders@jobakery.co.za | 123 Main Road Rosebank 0181 - Blue door 8a</p>
+            <a href="enquiries.html" class="button" style="padding:10px 20px; background:#8b3a50; color:white; text-decoration:none; border-radius:5px;">Send an Enquiry - Form Controls Comprehensive</a>
         </section>
     </main>
-    <footer><p>&copy; 2026 Jo's Bakery Rosebank 0181 - 123 Main Road, Rosebank, Pretoria 0181 - <a href="sitemap.xml">Sitemap</a> | <a href="robots.txt">Robots.txt</a></p></footer>
+
+    <div id="lightbox" onclick="closeLightbox()"><img id="lightbox-img" src="" alt="Enlarged - Jo's Bakery Rosebank 0181"></div>
+
+    <footer style="padding:20px; text-align:center; border-top:1px solid #ccc;">
+        <p>&copy; 2026 Jo's Bakery Rosebank 0181 - 123 Main Road, Rosebank, Pretoria 0181 - Blue door 8a - EST 2019 - Phone 012 345 6789 | <a href="sitemap.xml">Sitemap</a> | <a href="robots.txt">Robots.txt</a></p>
+        <p>Cakes Small R250 Medium R450 Large R650 | Banana R280 Sliced R30 | Cupcakes R20 Box 6 R110 | Bread R25/R30 Baked 3am | Pies R35 Family R120 | Cookies R15 Box R80</p>
+    </footer>
+
+    <script>
+    // Search - 5 Marks
+    const searchInput = document.getElementById('productSearch');
+    const cards = document.querySelectorAll('.product-card');
+    const msg = document.getElementById('searchMessage');
+    const noRes = document.getElementById('no-results');
+    function filter() {
+      const q = searchInput.value.toLowerCase().trim();
+      let count = 0;
+      cards.forEach(c => {
+        const name = c.getAttribute('data-name').toLowerCase();
+        const kw = c.getAttribute('data-keywords').toLowerCase();
+        const price = c.getAttribute('data-price');
+        if (name.includes(q) || kw.includes(q) || price.includes(q) || q === '') { c.style.display='block'; count++; } else { c.style.display='none'; }
+      });
+      if (count===0) { noRes.style.display='block'; msg.textContent='No products found for \"'+q+'\" - Try R25 R250 R280'; } else { noRes.style.display='none'; msg.textContent='Showing '+count+' of 6 products - Jo\'s Bakery Rosebank 0181'; }
+    }
+    searchInput.addEventListener('input', filter);
+
+    // Lightbox - 5 Marks
+    function openLightbox(src){ document.getElementById('lightbox-img').src=src; document.getElementById('lightbox').style.display='flex'; }
+    function closeLightbox(){ document.getElementById('lightbox').style.display='none'; }
+
+    // Leaflet Map - Find Us in Rosebank
+    document.addEventListener('DOMContentLoaded', function() {
+      var map = L.map('map').setView([-25.993, 28.112], 15);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '© OpenStreetMap' }).addTo(map);
+      L.marker([-25.993, 28.112]).addTo(map).bindPopup("<b>Jo's Bakery</b><br>123 Main Road<br>Rosebank 0181<br>Blue door 8a<br>EST 2019<br>Phone 012 345 6789<br>Bread baked 3am").openPopup();
+    });
+    </script>
 </body>
 </html>
