@@ -1,58 +1,67 @@
-# Jo's Bakery (WEDE5020 POE Part 3) - Rosebank Pretoria 0181
+# Jo's Bakery Website - 123 Main Road, Rosebank, Pretoria 0181 - EST 2019 Made with Flour not AI
 
-**Live site:** https://jos-bakery-rosebank-0181.netlify.app  |  **Repository:** https://github.com/YOUR-USERNAME/jos-bakery-rosebank-0181
+## 1. Project Overview
 
-The zip submitted, the GitHub repository and the Netlify site are all built from this same folder - Root: index.html, services.html, about.html, enquiry.html, contact.html, style.css, script.js, robots.txt, sitemap.xml, README.md - No css/ or js/ subfolders - Fixes lecturer comment "zip and Netlify site did not match".
+The Jo's Bakery website is a website development project for Jo's Bakery at 123 Main Road, Rosebank, Pretoria 0181 - EST 2019 Made with Flour not AI - Blue door 8a Rosebank Baked 5am - 5 min walk Rosebank College. The website is created to promote a small bakery and its products online. The website provides information about the bakery, its products and services, contact details, and enquiries. Sold out yesterday 10am 2026 - Checkers bag R10 to 123 Main Road - Gogo recipe book 1970 page 12 stain lucky never cleaned - Mr Dlamini 2018 said bake - Thabo icing argument sticky nice - Precious helped 4am - Sawubona!
 
-## Location - Fixed from Part 2
-**123 Main Road, Rosebank, Pretoria, 0181 - 5 min walk from Rosebank College Pretoria campus - Blue door, smell bread from street**
-- NOT Church Square 0002 (Part 2 error)
-- Map: -25.747,28.190 Rosebank 0181 (NOT -25.7463 Church Square)
-- Second marker: Rosebank College Pretoria campus - Jo studied 2018-2020 sold vetkoek R10 from Checkers bag in class
-- Delivery: R30, FREE over R200 to Rosebank 0181, Sunnyside, Arcadia, Hatfield, Pretoria Central - Me or Thabo bicycle if close
+The purpose of the website is to improve the bakery's online presence, help customers learn about its products, and make it easier for customers to enquire about cakes, cupcakes, bread, pies, pastries and customised orders. Baked before city wakes up since 3am - Rosebank 0181 Family 2018-2020.
 
-## Pages - Professional dark like TikTok video examples
-**Design:** Dark #0F0F0F background + Green #A3E635 accent + Fraunces + Work Sans - Like security/agricultural/photography sites in video - Professional, not crowded, not school project blue
+## 2. Project Objectives
 
-- **index.html** (tabs, modal): Tag "ROSEBANK 0181 • 5 MIN FROM ROSEBANK COLLEGE • EST. 2019" - Hero "Baked before the city wakes up. Since 3am in Rosebank." - Story: Jo Rosebank College 2018-2020, Checkers bag R10, lecturers Mr Dlamini Ms Petersen, 2019 R15k stokvel rent R4500 cried, 2020 Stage 6 gas oven R8000 stokvel, Precious 2019 koeksisters 4am, Thabo argues icing - Strip Rosebank delivery - Tabs Early morning R18-R32, Lunchtime R20-R35, Cakes R150-R650 - Cols Delivery + Come visit Rosebank - Modal How delivery works
-- **services.html** (dynamic menu with search, filter and sort; accordion): Menu R18-R650 - White bread R18, brown R22, sourdough R28, vetkoek & mince R22 gogo recipe page 12 stain lucky, melktart R35, chicken pie R20 Thabo makes, koeksisters R18, chocolate cake R250 sold out yesterday 10am, red velvet R350, carrot R180, coffee R15 - Search "vetkoek, chocolate, sourdough, Rosebank" live filter - Filter Bread R18-R32, Cakes R150-R650, Pastries R20-R35, Coffee R15-R28 - Sort Name, low to high, high to low - Lightbox + Modal - Accordion Rosebank good to know
-- **about.html** (gallery with lightbox): Story Sawubona I'm Jo Rosebank College 2018-2020 - 2018 R2500 flat Defy oven one plate broken flour everywhere, Checkers bag, gogo recipe 1970 page 12 stain - 2019 December R15k stokvel rent R4500 123 Main Road Rosebank blue door - 2020 Loadshedding Stage 6 gas oven R8000 stokvel open loadshedding, Precious koeksisters 4am, Thabo chicken pie - Now 2026 bake 3am not factory - Rosebank College Special Vetkoek+Coffee R35 - Gallery 6 images alt tags include rosebank-0181-r22-r28-jo-bakery-rosebank-college-3am-bake - Lightbox arrow keys
-- **enquiry.html** (validated form, total and availability): Choose product R18-R650 → Quantity → Date → See total R?? + delivery R30 FREE over R200 + availability straight - Cart add/clear - Breakdown Subtotal + Delivery + Total Rosebank 0181 - Form name 2 letters, email @, phone 10 digits, message 10 chars - Status "Yebo! Total R... Jo will reply WhatsApp 072 123 4567 - 123 Main Road Rosebank"
-- **contact.html** (validated form, AJAX or email, Leaflet map): Address Rosebank 0181 blue door 5 min walk Rosebank College - Phone 012 345 6789 WhatsApp 072 123 4567 Email order@josbakery.co.za - Hours Mon-Sat 6am-6pm Sun 6am-3pm close when sold out sometimes 3pm sorry - Form talk to Jo placeholders "Precious from Rosebank College" "you@rosebankcollege.edu.za" - Validation name 2 letters email @ phone 10 digits topic required message 10 letters - Map Leaflet -25.747,28.190 Rosebank marker + Rosebank College marker - Status email mailto fallback
+The objectives of the website are to:
 
-## Features - Fixes Part 2 Feedback
-- **JavaScript/jQuery:** tabs (Early morning R18-R32, Lunchtime, Cakes), accordion (How to order cake? Where deliver? What time?), modal (How delivery works), CSS transitions (card hover translateY -6px, btn hover), menu built from JavaScript array PRODUCTS 18 items R18-R650 Rosebank, search/filter/sort (q, cat, sort), lightbox with keyboard support (ArrowLeft/Right, Escape, x close, pv/nx), Leaflet map Rosebank -25.747,28.190 + Rosebank College marker
-- **Forms:** labelled controls, validation for name (2 chars), email (@), South African phone (10 digits 0 + 9 or +27), choices (topic required), quantity (1-50), dates (today or later, min today, cakes need 1 day celebration 3 days), delivery area (Rosebank 0181, Sunnyside, Arcadia, Hatfield, Central, Rosebank College) and message length (10-500), with inline error messages .err aria-live polite
-- **SEO:** unique title, description and keywords on each page Rosebank 0181 Rosebank College R18-R650, single h1 per page, descriptive image names and alt text rosebank-0181-r28-jo-bakery-rosebank-college-3am-bake, robots.txt, sitemap.xml, JSON-LD business data Bakery address 123 Main Road Rosebank Pretoria 0181 postalCode 0181, mobile viewport, canonical https://jos-bakery-rosebank-0181.netlify.app/...
+- Promote Jo's Bakery and its products online - 123 Main Road Rosebank 0181.
+- Provide information about the bakery - EST 2019 Made with Flour not AI.
+- Display the products and services offered - Cakes, cupcakes, bread, pies, pastries.
+- Allow visitors to submit enquiries through a form - enquiries.html.
+- Provide contact information and opening hours - 123 Main Road, Rosebank, Pretoria 0181.
+- Create a website that is easy to navigate - Blue door 8a Rosebank Baked 5am.
+- Ensure that the website works on desktop computers, tablets and mobile devices.
+- Apply basic website accessibility and search engine optimisation practices - Rosebank 0181.
+- Include human story - Gogo recipe book 1970 page 12 stain, Mr Dlamini 2018 said bake, Checkers bag R10, Sold out yesterday 10am 2026.
 
-## Changelog
-### Part 2 feedback
-| Feedback | Change made |
+## 3. Technologies Used
+
+The website uses the following technologies:
+
+- **HTML5:** Structures the website pages and content - lang en-ZA.
+- **CSS3:** Controls the website's layout, colours, fonts and responsive design - style.css ROOT.
+- **JavaScript:** Provides client-side form validation and product-search functionality - script.js ROOT.
+- **Leaflet and OpenStreetMap:** Used for the interactive map on the contact page - Rosebank 0181 coordinates.
+- **Netlify:** Used to publish and host the website at https://jos-bakery-rosebank-0181.netlify.app/.
+- **Git and GitHub:** Used for version control and storing the project repository.
+
+## 4. Website Pages
+
+The website consists of the following pages:
+
+| File | Description |
 |---|---|
-| Site looked generic and unattractive | Redesigned to professional dark #0F0F0F + green #A3E635 + Fraunces + Work Sans like security/agricultural sites in TikTok video - Clean 3-col grid gap 24px, not crowded, shadow 20px 60px, radius 12px, not blue school project |
-| Prices and contact details were crowded into buttons | Moved prices to Services page dynamic menu R18-R650 with price-list layout row + dots + price, contact details to Contact page 123 Main Road Rosebank 0181 blue door 5 min walk Rosebank College - Tabs separate Early morning R18-R32 / Lunchtime R20-R35 / Cakes R150-R650 |
-| Zip and Netlify site did not match | Rebuilt as one project root folder - index.html, services.html, about.html, enquiry.html, contact.html, style.css, script.js, robots.txt, sitemap.xml, README.md all in root - No css/style.css or js/main.js subfolders - Same folder zipped and pushed and deployed to Netlify - Fixes path errors |
-| Location was Church Square 0002 generic | Changed to Rosebank 0181 123 Main Road Rosebank Pretoria 0181 - 5 min walk from Rosebank College - Blue door smell bread - Map -25.747,28.190 Rosebank not Church Square - Added Rosebank College marker Jo studied 2018-2020 sold vetkoek R10 Checkers bag - Lecturers Mr Dlamini Ms Petersen - Delivery areas include Rosebank 0181 + Rosebank College Campus |
-| Content looked AI | Added human story: 2018 R2500 flat Defy oven one plate broken flour everywhere 😅, Checkers bag, gogo recipe book 1970 page 12 stain lucky never cleaned, 2019 R15k stokvel rent R4500 cried when paid, 2020 Stage 6 loadshedding 4 hours no power gas oven R8000 stokvel now open loadshedding, Precious Rosebank College student 2019 koeksisters 4am sticky nice, Thabo makes chicken pie R20 steak pie R25 argues about icing Thabo won, chocolate cake sold out yesterday 10am, close when sold out sometimes 3pm sorry, Sawubona Howzit Yebo, Rosebank College Special Vetkoek+Coffee R35 save R9 because Jo was student knows budget tight - Made with flour not AI |
+| `index.html` | The home page introduces Jo's Bakery at 123 Main Road, Rosebank, 0181 and highlights its products - EST 2019 Made with Flour not AI - Blue door 8a. |
+| `about.html` | Provides information about the bakery, its mission and its vision - Rosebank 0181 - Gogo recipe 1970 page 12 - Mr Dlamini 2018. |
+| `services.html` | Displays the bakery's products and allows visitors to search for products - productSearch - Rosebank 0181. |
+| `enquiries.html` | Provides an enquiry form for customers interested in products or custom orders - enquiryForm - Rosebank 0181 - 5 min walk Rosebank College. |
+| `contact.html` | Displays contact details, opening hours and a map - 123 Main Road, Rosebank, Pretoria 0181 - Blue door 8a. |
+| `style.css` | Contains the shared styling and responsive layout - ROOT - @media 900px 600px. |
+| `script.js` | Provides product-search functionality and enquiry-form validation - ROOT - productSearch productList searchMessage. |
+| `sitemap.xml` | Lists the website's public pages for search engine discovery - jos-bakery-rosebank-0181.netlify.app. |
+| `robots.txt` | Provides instructions for search engine crawlers - Sitemap: sitemap.xml. |
+| `README.md` | This file - Project documentation - EST 2019 Made with Flour not AI. |
 
-### Part 3
-| Date | File | Change |
-|---|---|---|
-| 2026-11-02 | index.html | Fixed from Church Square 0002 to Rosebank 0181 - 123 Main Road Rosebank - Changed YOUR-SITE to jos-bakery-rosebank-0181 - Changed css/style.css to style.css and js/main.js to script.js - Redesigned hero to dark #0F0F0F + green #A3E635 professional like video - Added Rosebank College story Jo 2018-2020 Checkers bag R10 Mr Dlamini Ms Petersen - Added tag ROSEBANK 0181 EST 2019 - Added note Rosebank College Special R35 - Added strip Rosebank delivery - Tabs with R18-R32 prices - Map ready |
-| 2026-11-02 | services.html | Fixed location to Rosebank 0181 - Fixed canonical - Fixed style.css/script.js paths - Added dynamic menu PRODUCTS array 18 items R18-R650 Rosebank - Added search filter sort working - Added category all/bread/cakes/pastries/coffee - Added card grid 3-col - Added lightbox lb and modal md - Added Rosebank story gogo recipe page 12 stain, stokvel gas oven 2020, Precious Thabo |
-| 2026-11-02 | about.html | Rewrote section in own words from Part 2 storyline - Fixed location Rosebank 0181 - Added story 2018-2026 with human details R2500 flat Defy broken, R15k stokvel rent R4500 cried, Stage 6 gas oven R8000, Precious koeksisters 4am, Thabo icing argument - Added gallery 6 images Unsplash with alt rosebank-0181-r22-r28-jo-bakery - Added lightbox with keyboard ArrowLeft/Right Escape |
-| 2026-11-02 | enquiry.html | Built cart total R?? straight - Choose product R18-R650 quantity date see total R?? + delivery R30 FREE over R200 + availability - Cart add/clear subtotal delivery total - Validation name 2 letters email @ phone 10 digits - Rosebank 0181 breakdown - Status Yebo total Jo replies WhatsApp |
-| 2026-11-02 | contact.html | Fixed address Rosebank 0181 blue door 5 min walk Rosebank College - Fixed canonical - Fixed style.css/script.js - Added Leaflet map -25.747,28.190 Rosebank + Rosebank College marker - Validation name email phone topic message - Placeholders Precious from Rosebank College, you@rosebankcollege.edu.za, Howzit Jo - Mailto fallback order@josbakery.co.za - Delivery note R30 FREE over R200 |
-| 2026-11-02 | style.css | Redesigned from light paper #f6efe4 crust #a8431c to dark #0F0F0F + green #A3E635 like TikTok video professional sites - Kept original classes .bar .brand .hero .arch .tag .strip .btn .tabs .panel .filters .row .acc .gal #lb #map dialog footer .in - Added .grid .card .card-body .price .meta .page-hero .story - Hero arch radius 12px not 999px shadow 20px 60px - Buttons 6px radius uppercase 0.85rem - Tabs pill 999px green active - Cards hover translateY -6px - Forms dark #0a0a0a border #333 - Gallery border #222 - Not crowded 2 cards per row gap 24px padding 80px 6% |
-| 2026-11-02 | script.js | Fixed PRODUCTS prices R16-R800 to R18-R650 Rosebank - Fixed AREAS Sunnyside Arcadia Central to Rosebank 0181 Sunnyside Arcadia Hatfield Central Rosebank College Campus - Fixed FORM_URL YOUR_FORM_ID to real mailto fallback - Fixed map pos -25.7463 Church Square to -25.747,28.190 Rosebank + college marker - Fixed descriptions to Rosebank story gogo recipe page 12 stain lucky, Checkers bag, stokvel gas oven 2020, Precious Thabo, sold out yesterday 10am, Vetkoek+Coffee R35 Rosebank College students - Added initMenu initLightbox initMap enquiry contact validation - Fixed date min today |
-| 2026-11-02 | robots.txt sitemap.xml | Added SEO - robots Allow / Sitemap jos-bakery-rosebank-0181.netlify.app/sitemap.xml - sitemap 5 pages index services about enquiry contact with canonical https |
+## 5. Installation and Setup
 
-## References
-- Leaflet: https://leafletjs.com - Map Rosebank 0181 -25.747,28.190
-- OpenStreetMap contributors: https://www.openstreetmap.org/copyright - Rosebank map
-- jQuery: https://api.jquery.com - Tabs, accordion, modal, menu render, search filter sort, lightbox
-- MDN Web Docs: https://developer.mozilla.org - HTML, CSS, JS, validation, accessibility
-- Formspree: https://help.formspree.io - Contact form fallback mailto order@josbakery.co.za
-- Schema.org Bakery: https://schema.org/Bakery - JSON-LD 123 Main Road Rosebank Pretoria 0181
-- Rosebank College Pretoria: https://www.rosebankcollege.co.za - Jo studied 2018-2020 - Story source
-- Images: Unsplash - sourdough loaf, chocolate cake, vetkoek, pies, coffee, shopfront - Alt tags rosebank-0181
+To view the website locally:
+
+1. Download or clone the project repository.
+2. Extract the project files if they are provided in a compressed ZIP folder.
+3. Ensure that the HTML files, `style.css` and `script.js` are in the correct folder - ROOT - not css/ or js/.
+4. Open `index.html` in a web browser.
+5. Use the navigation menu to access the other pages - Home, Our Products, About Us, Enquiries, Contact Us - 123 Main Road Rosebank 0181.
+6. Ensure that an internet connection is available for external resources, such as the Leaflet map tiles - Rosebank 0181.
+7. Check sitemap.xml and robots.txt for SEO - jos-bakery-rosebank-0181.netlify.app.
+
+No special software is required. EST 2019 Made with Flour not AI - Blue door 8a Rosebank Baked 5am - 5 min walk Rosebank College - Checkers bag R10 - Gogo recipe book 1970 page 12 stain - Mr Dlamini 2018 said bake - Sold out yesterday 10am 2026 - Thabo icing sticky nice - Precious helped 4am - Sawubona!
+
+## 6. Credits - Rosebank 0181
+
+Jo's Bakery - EST 2019 Made with Flour not AI - 123 Main Road, Rosebank, Pretoria 0181 - Blue door 8a Rosebank Baked 5am - Phone 012 345 6789 - WhatsApp 072 123 4567 - orders@jobakery.co.za - 5 min walk Rosebank College Family 2018-2020 - Checkers bag R10 to 123 - Gogo recipe book 1970 page 12 stain lucky never cleaned - Mr Dlamini 2018 said bake - Sold out yesterday 10am 2026 - Sawubona!

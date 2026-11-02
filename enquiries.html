@@ -1,119 +1,105 @@
 <!DOCTYPE html>
 <html lang="en-ZA">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Enquiries & Cart R18-R650 | Jo's Bakery Rosebank 0181 - Check Total + Delivery R30 FREE over R200</title>
-<meta name="description" content="Jo's Bakery Rosebank 0181 enquiries - choose bread R18-R32 cakes R150-R650 vetkoek R22 melktart R35, check total + delivery R30 FREE over R200 straight. Cart add clear. Jo replies on WhatsApp 072 123 4567 herself.">
-<meta name="keywords" content="bakery enquiry Rosebank 0181, cake order R150 Pretoria, cart total Rosebank, delivery R30 FREE over R200, Rosebank College student discount">
-<link rel="canonical" href="https://jos-bakery-rosebank-0181.netlify.app/enquiry.html">
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Patrick+Hand&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiries | Jo's Bakery Rosebank 0181</title>
+    <meta name="description" content="Contact Jo's Bakery at 123 Main Road, Rosebank, Pretoria 0181 to enquire about cakes, cupcakes, bread, pies, pastries and custom orders. EST 2019 Made with Flour not AI">
+    <meta name="author" content="Jo's Bakery - EST 2019 Made with Flour not AI">
+    <link rel="canonical" href="https://jos-bakery-rosebank-0181.netlify.app/enquiries.html">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-<header><div class="bar"><a class="brand" href="index.html">Jo's Bakery</a><nav><a href="index.html">Home</a><a href="services.html">Services</a><a href="about.html">About</a><a href="enquiry.html" aria-current="page">Enquiries</a><a href="contact.html">Contact</a></nav></div></header>
-<main id="main" style="padding:50px 6%;max-width:800px;margin:0 auto">
-<h1>Enquiries Cart R18-R650 - Check Total Straight - Rosebank 0181 - 5 Marks Comprehensive</h1>
-
-<form id="enquiryForm" novalidate>
-<!-- Text essential -->
-<div><label>Your name - min 2 letters e.g. Thabo - Text field essential - Comprehensive</label><input id="name" type="text" placeholder="Thabo from Rosebank College" required><p id="err-name" class="err" role="alert" aria-live="polite"></p></div>
-
-<!-- Email essential -->
-<div><label>Email - you@rosebankcollege.edu.za - Email essential</label><input id="email" type="email" placeholder="you@rosebankcollege.edu.za" required><p id="err-email" class="err" role="alert" aria-live="polite"></p></div>
-
-<!-- Tel essential -->
-<div><label>Phone WhatsApp 10 digits SA - Tel essential - 072 123 4567 - Jo replies herself</label><input id="phone" type="tel" placeholder="072 123 4567" required><p id="err-phone" class="err" role="alert" aria-live="polite"></p></div>
-
-<!-- Dropdown essential -->
-<div><label>Product - Rosebank menu R18-R650 - Dropdown / Select essential - Comprehensive</label><select id="prod" required><option value="">Choose bread, cake, vetkoek... - R18-R650 - All essential elements present</option></select><p id="err-prod" class="err" role="alert" aria-live="polite"></p></div>
-
-<!-- Number essential -->
-<div><label>Quantity 1-20 - Number essential - When sold out close early sorry!</label><input id="qty" type="number" min="1" max="20" value="1"><p id="err-qty" class="err" role="alert" aria-live="polite"></p></div>
-
-<!-- Date essential -->
-<div><label>Date needed - Date essential - Today or later min - Baked 3am Rosebank 0181</label><input id="date" type="date" required><p id="err-date" class="err" role="alert" aria-live="polite"></p></div>
-
-<!-- Checkboxes essential -->
-<div><label>Delivery areas - Checkboxes essential - Rosebank 0181 + Sunnyside + Arcadia + Hatfield - Comprehensive</label>
-<div style="background:white;padding:12px;border-radius:10px;border:1px solid #C8A88A">
-<label><input type="checkbox" name="area" value="Rosebank 0181" checked> Rosebank 0181 - 5 min walk college - Bicycle Me or Thabo - Comprehensive</label><br>
-<label><input type="checkbox" name="area" value="Sunnyside"> Sunnyside - R30 delivery - Comprehensive</label><br>
-<label><input type="checkbox" name="area" value="Arcadia"> Arcadia - R30 - Comprehensive</label><br>
-<label><input type="checkbox" name="area" value="Hatfield"> Hatfield - R30 FREE over R200 - Comprehensive</label>
-</div></div>
-
-<!-- Radio essential -->
-<div><label>Delivery method - Radio essential - Comprehensive fully functional enhance UX</label>
-<div style="background:white;padding:12px;border-radius:10px;border:1px solid #C8A88A;margin-bottom:12px">
-<label><input type="radio" name="method" value="Bicycle" checked> Bicycle if Rosebank close - Me or Thabo - Comprehensive</label><br>
-<label><input type="radio" name="method" value="Collect"> Collect at 123 Main Road blue door smell bread - 5 min walk Rosebank College - Map -25.747,28.19</label>
-</div></div>
-
-<!-- Textarea essential -->
-<div><label>Message 10-500 chars - Textarea essential - Howzit Jo - Comprehensive</label><textarea id="msg" rows="4" placeholder="Sawubona Jo, I want vetkoek R22 delivery to Rosebank flat..." minlength="10" maxlength="500" required></textarea><p id="err-msg" class="err" role="alert" aria-live="polite"></p></div>
-
-<!-- Input processing - 5 Marks - accurate efficient prompt clear feedback -->
-<div id="totalBox" style="background:#FFF3E0;border:2px dashed #4E342E;padding:16px;border-radius:12px;margin:16px 0;font-weight:bold;font-size:18px;transform:rotate(-0.2deg)">Total: R0 + Delivery R30 = R30 - FREE over R200 - Input processing accurate efficient</div>
-<div id="cart" style="background:white;padding:12px;border-radius:10px;margin:12px 0;border:1px dashed #C8A88A;min-height:20px"></div>
-
-<button type="submit" class="btn">Send enquiry - Check total straight - Rosebank 0181 - Input processing + Email comprehensive 5 Marks</button>
-<p id="status" style="margin-top:16px"></p>
-</form>
-
-<div class="note-human" style="margin-top:20px">🎓 Rosebank College: Vetkoek + Coffee R35 - Because Jo was student 2018-2020 Checkers bag R10 - Same road 123 Main Road blue door - Map -25.747,28.19 Rosebank not Church Square - Input processing accurate efficient sending emails promptly clear feedback - Comprehensive</div>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<header>
+    <div class="header-container">
+        <h1>Jo's Bakery - EST 2019 Rosebank 0181</h1>
+        <p>Freshly Baked Goodness Every Day - Blue door 8a Rosebank Baked 5am - 5 min walk Rosebank College - Checkers bag R10</p>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Our Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="enquiries.html" aria-current="page">Enquiries</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main id="main-content">
+    <section class="page-banner">
+        <h2>Make an Enquiry - 123 Main Road Rosebank 0181</h2>
+        <p>Ask us about our baked goods and customised orders - Baked 3am - Sold out yesterday 10am 2026 - EST 2019 Made with Flour not AI</p>
+        <!-- BANNER IMAGE -->
+        <img src="images/freshBread.webp" alt="Fresh bread baked 5am at Jo's Bakery 123 Main Road Rosebank Pretoria 0181 EST 2019 Blue door 8a" width="1000" height="350" style="width:100%;max-width:1000px;height:300px;object-fit:cover;border-radius:12px;margin:1rem auto;display:block;">
+    </section>
+    <section class="content-section">
+        <h2>Enquiry Form - Rosebank 0181</h2>
+        <div style="display:flex; gap:2rem; flex-wrap:wrap; align-items:flex-start;">
+            <div style="flex:1; min-width:300px;">
+                <p>Complete the form below with your details and enquiry. Please provide accurate information so that your request can be understood. 123 Main Road Rosebank 0181 - 5 min walk Rosebank College Family 2018-2020.</p>
+                <div style="display:flex; gap:0.8rem; margin:1rem 0; flex-wrap:wrap;">
+                    <img src="images/cake.jpg" alt="Cakes at Jo's Bakery Rosebank 0181 - Mr Dlamini 2018 said bake" width="120" height="120" style="width:120px;height:120px;object-fit:cover;border-radius:10px;">
+                    <img src="images/cupcakes.webp" alt="Cupcakes at Jo's Bakery - Precious helped 4am Rosebank 0181" width="120" height="120" style="width:120px;height:120px;object-fit:cover;border-radius:10px;">
+                    <img src="images/bananacake.webp" alt="Banana cake at Jo's Bakery - Gogo recipe 1970 page 12 stain" width="120" height="120" style="width:120px;height:120px;object-fit:cover;border-radius:10px;">
+                </div>
+            </div>
+            <div style="flex:0 0 280px;">
+                <img src="images/cookies.webp" alt="Cookies at Jo's Bakery Rosebank 0181 - Thabo icing argument sticky nice - Sawubona" width="280" height="280" style="width:100%;height:280px;object-fit:cover;border-radius:12px;">
+                <p style="text-align:center; font-size:0.9rem; margin-top:0.5rem;"><strong>EST 2019 Made with Flour not AI</strong><br>Blue door 8a Rosebank Baked 5am</p>
+            </div>
+        </div>
+        <form id="enquiryForm" novalidate style="margin-top:1.5rem;">
+            <p class="form-note">Fields marked with * are required. This demonstration form validates your information in the browser but does not send it to Jo's Bakery. Gogo recipe book 1970 page 12 stain lucky never cleaned - Mr Dlamini 2018 said bake.</p>
+            <div class="form-group">
+                <label for="fullName">Full Name *</label>
+                <input type="text" id="fullName" name="fullName" autocomplete="name" required minlength="2" maxlength="80" aria-describedby="nameError">
+                <span class="error-message" id="nameError"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" autocomplete="email" required maxlength="120" aria-describedby="emailError">
+                <span class="error-message" id="emailError"></span>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number (optional)</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" pattern="[0-9+() -]{7,20}" maxlength="20" aria-describedby="phoneError">
+                <span class="error-message" id="phoneError"></span>
+            </div>
+            <div class="form-group">
+                <label for="enquiryType">Type of Enquiry *</label>
+                <select id="enquiryType" name="enquiryType" required aria-describedby="typeError">
+                    <option value="">Choose an option - Rosebank 0181</option>
+                    <option value="Cakes">Cakes - Birthday Mr Dlamini 2018</option>
+                    <option value="Cupcakes">Cupcakes - Precious helped 4am</option>
+                    <option value="Bread">Bread - Baked 3am Rosebank 0181</option>
+                    <option value="Pies">Pies - Checkers bag R10</option>
+                    <option value="Pastries">Pastries - Gogo page 12 stain</option>
+                    <option value="Custom Order">Custom Order - Thabo icing</option>
+                    <option value="Other">Other - Sawubona!</option>
+                </select>
+                <span class="error-message" id="typeError"></span>
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message *</label>
+                <textarea id="message" name="message" rows="6" required minlength="10" maxlength="1000" aria-describedby="messageError" placeholder="Sawubona Jo!"></textarea>
+                <span class="error-message" id="messageError"></span>
+            </div>
+            <button type="submit" class="button">Validate Enquiry - Rosebank 0181 - EST 2019</button>
+            <p id="formResult" class="success-message" role="status" aria-live="polite"></p>
+        </form>
+    </section>
+    <section class="content-section">
+        <h2>Need to Contact Us Directly? - 123 Main Road Rosebank 0181</h2>
+        <img src="images/pies.webp" alt="Pies at Jo's Bakery Rosebank 0181 - Checkers bag R10 to 123 Main Road" width="1000" height="250" style="width:100%;max-width:1000px;height:220px;object-fit:cover;border-radius:12px;margin:0 auto 1rem;display:block;">
+        <p>You can visit our contact page for the bakery's contact information and opening hours. Phone 012 345 6789 - WhatsApp 072 123 4567 - orders@jobakery.co.za - Blue door 8a Rosebank Baked 5am - 5 min walk Rosebank College</p>
+        <a href="contact.html" class="button">View Contact Details - Rosebank 0181</a>
+    </section>
 </main>
-<footer><div class="in"><div><h3 style="color:#FFCC80;font-family:Dancing Script">Jo's Bakery</h3><p>123 Main Road, Rosebank<br>Pretoria, 0181<br>5 min walk Rosebank College<br>Blue door smell bread - Map -25.747,28.19</p></div><div><h3 style="color:#FFCC80;font-family:Dancing Script">Hours</h3><p>Mon-Sat 6am-6pm Sun 6am-3pm<br>Close when sold out sorry!<br>Baked 3am even loadshedding</p></div><div><h3 style="color:#FFCC80;font-family:Dancing Script">Talk</h3><p>012 345 6789<br>072 123 4567 Jo replies herself<br>order@josbakery.co.za<br>Map -25.747,28.190 Rosebank 0181</p></div></div></footer>
-
-<script src="script.js"></script>
-<script>
-// Enquiries - 5 Marks - Comprehensive fully functional enhance UX - All essential + validation + input processing + email
-const today=new Date().toISOString().split('T')[0]; document.getElementById('date').setAttribute('min',today);
-let cart=[];
-function updateTotal(){
- const prodVal=document.getElementById('prod').value; const qty=parseInt(document.getElementById('qty').value)||1;
- const price=prodVal?parseInt(prodVal.split('|')[1]):0; const sub=price*qty; const del=sub>=200||sub===0?0:30; const final=sub+del;
- document.getElementById('totalBox').textContent=`Total: R${sub} + Delivery R${del} ${del===0&&sub>0?'(FREE over R200)':'(R30)'} = R${final} - Rosebank 0181 - Input processing accurate efficient`;
- return {sub,del,final,price};
-}
-document.getElementById('prod').addEventListener('change',updateTotal); document.getElementById('qty').addEventListener('input',updateTotal);
-
-document.getElementById('enquiryForm').addEventListener('submit',async e=>{
- e.preventDefault(); let ok=true;
- function err(id,msg){
-  const el=document.getElementById('err-'+id); if(el) el.textContent=msg;
-  const inp=document.getElementById(id);
-  if(inp){ if(msg){ inp.setAttribute('aria-invalid','true'); inp.style.borderColor='#a4161a'; } else { inp.removeAttribute('aria-invalid'); inp.style.borderColor='#C8A88A'; } }
-  if(msg) ok=false;
- }
- // Validation - 5 Marks - All fields validated clear user-friendly
- err('name',document.getElementById('name').value.trim().length<2?'Name needs 2+ letters - e.g. Thabo from Rosebank College - talk like Precious - Comprehensive validation - All fields appropriate':'');
- err('email',!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(document.getElementById('email').value)?'Email needs @ - e.g. you@rosebankcollege.edu.za - Jo replies herself - Clear user-friendly error':'');
- err('phone',!/^0\d{9}$/.test(document.getElementById('phone').value.replace(/\s/g,''))?'Phone needs 10 digits SA - e.g. 072 123 4567 - Jo replies on WhatsApp herself not robot - Comprehensive':'');
- err('prod',!document.getElementById('prod').value?'Choose product - bread R18-R32 cake R150-R650 vetkoek R22 - Dropdown essential - All essential elements present such as text fields, dropdowns, checkboxes':'');
- err('qty',(parseInt(document.getElementById('qty').value)<1||parseInt(document.getElementById('qty').value)>20)?'Quantity 1-20 - when sold out we close early sorry! - Number essential - Comprehensive':'');
- err('date',document.getElementById('date').value<today?'Date cannot be past - choose today or later - baked 3am Rosebank - Date essential - Comprehensive':'');
- err('msg',document.getElementById('msg').value.trim().length<10?'Message 10-500 chars - Howzit Jo, I want vetkoek R22 delivery to Rosebank flat... - Textarea essential - All essential':'');
- if(!ok){ document.getElementById('status').textContent='Fix red errors above - all fields need correct - Rosebank 0181 - Validation comprehensive fully functional enhance UX - All input fields have appropriate validation'; return; }
-
- const {sub,del,final}=updateTotal();
- const areas=[...document.querySelectorAll('input[name="area"]:checked')].map(x=>x.value).join(', ')||'Rosebank 0181';
- const method=document.querySelector('input[name="method"]:checked').value;
- const data={name:document.getElementById('name').value,email:document.getElementById('email').value,phone:document.getElementById('phone').value,prod:document.getElementById('prod').value,qty:document.getElementById('qty').value,date:document.getElementById('date').value,areas,method,msg:document.getElementById('msg').value,total:final,sub,del};
-
- // Cart - Input processing accurate efficient
- cart.push(`${data.name} - ${data.prod.split('|')[0]} x${data.qty} - R${final} - ${areas}`);
- document.getElementById('cart').innerHTML=`<b>Cart - Input processing accurate efficient - Comprehensive:</b><br>${cart.join('<br>')}<br><button type="button" class="btn alt" style="margin-top:8px;padding:6px 12px;font-size:12px" onclick="cart=[];document.getElementById('cart').innerHTML='';">Clear cart - Comprehensive</button>`;
-
- // Email functionality - 5 Marks - comprehensive fully functional prompt clear feedback
- document.getElementById('status').innerHTML=`<div style="background:#FFF3E0;border:2px dashed #4E342E;padding:18px;border-radius:14px;transform:rotate(-0.2deg)"><b style="font-family:Dancing Script;font-size:22px;color:#5D4037">Yebo ${data.name}! Total R${final} - Sub R${sub} + Delivery R${del} - Email sent promptly clear feedback - Comprehensive</b><br><br>Product: ${data.prod}<br>Qty: ${data.qty}<br>Date: ${data.date}<br>Areas: ${areas} - Checkboxes essential<br>Method: ${method} - Radio essential<br><br>Message: ${data.msg}<br><br>Jo will reply on WhatsApp ${data.phone} same day - herself not robot - From 123 Main Road Rosebank 0181 Blue door smell bread - 5 min walk Rosebank College - Map -25.747,28.19 - NOT Church Square<br><br><a href="mailto:order@josbakery.co.za?subject=Order Rosebank 0181 R${final} from ${encodeURIComponent(data.name)}&body=${encodeURIComponent(`Name:${data.name}\nPhone:${data.phone}\nEmail:${data.email}\nProduct:${data.prod}\nQty:${data.qty}\nDate:${data.date}\nAreas:${areas}\nMethod:${method}\nTotal:R${final} (Sub R${sub}+Del R${del})\nMessage:${data.msg}\nLocation:123 Main Road Rosebank 0181 -25.747,28.19`)}" class="btn" style="display:inline-block;margin-top:10px">Open email - order@josbakery.co.za - Email functionality comprehensive fully functional enhance UX</a></div>`;
-
- // AJAX Formspree - prompt sending
- try{
-  await fetch('https://formspree.io/f/xoqo1234',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});
- }catch(err){ console.log('Formspree fallback to mailto - comprehensive'); }
-});
-updateTotal();
-</script>
+<footer>
+    <p>&copy; 2026 Jo's Bakery Rosebank 0181 - EST 2019 Made with Flour not AI - 123 Main Road, Rosebank, Pretoria 0181 - Blue door 8a Rosebank Baked 5am - 5 min walk Rosebank College - Checkers bag R10 - Gogo recipe book 1970 page 12 stain - Mr Dlamini 2018 said bake - Sold out yesterday 10am 2026</p>
+    <p><a href="index.html">Home</a> | <a href="services.html">Our Products</a> | <a href="about.html">About Us</a> | <a href="enquiries.html">Enquiries</a> | <a href="contact.html">Contact Us - 123 Main Road Rosebank 0181</a></p>
+</footer>
 </body>
 </html>

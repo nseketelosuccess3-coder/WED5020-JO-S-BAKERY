@@ -1,0 +1,40 @@
+# Changelog
+
+All notable changes made to the Jo's Bakery website project are documented in this file.
+
+The project follows the Keep a Changelog format.
+
+## [1.0.0] - 2026-11-02
+
+### Added
+- Created the home page (`index.html`).
+- Created the About Us page (`about.html`).
+- Created the Products and Services page (`services.html`).
+- Created the Enquiries page (`enquiries.html`).
+- Created the Contact Us page (`contact.html`).
+- Added a shared stylesheet (`style.css`) for consistent website design.
+- Added JavaScript functionality (`script.js`) for product searching and enquiry form validation.
+- Added a sitemap (`sitemap.xml`) to help search engines discover website pages.
+- Added a `robots.txt` file with crawler instructions.
+- Added a `README.md` file containing the project overview, objectives, technologies and setup instructions.
+- Added a `REFERENCES.md` file documenting technical reference sources.
+- Added navigation links between website pages.
+- Added contact information and opening hours.
+- Added responsive styling for desktop, tablet and mobile screens.
+- Added form labels, validation messages and basic accessibility features.
+
+### Changed
+- Standardised the website's colours, typography, buttons and layout.
+- Improved navigation consistency across the website pages.
+- Updated the product page to include a product-search feature.
+- Improved the layout of the enquiry and contact forms.
+
+### Fixed
+- Added client-side validation for required enquiry form fields.
+- Improved feedback when visitors enter invalid information.
+- Improved the website layout on smaller screens.
+
+### Notes
+- The enquiry form currently validates information in the browser but does not send enquiries to an email inbox.
+- Contact details, opening hours, map coordinates and website URLs must be checked before final publication.
+- The changes listed above describe the intended project files. Confirm that each feature has been implemented and tested before submitting the final version.
